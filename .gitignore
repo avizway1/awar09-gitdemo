@@ -18,3 +18,14 @@ node_modules
 #OS junk
 .DS_Store
 Thumbs.db
+
+#ignore tf supportfiles
+**/.terraform/*
+
+# Exclude tftstae file
+*.tfstate
+*.tfstate.*
+
+#exclude all varibale files
+*.tfvars
+*.tfvars.json
