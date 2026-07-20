@@ -1,0 +1,1301 @@
+2026-07-17T20:27:07.360+0530 [INFO]  Terraform version: 1.15.8
+2026-07-17T20:27:07.360+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.105.0
+2026-07-17T20:27:07.360+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-07-17T20:27:07.360+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-07-17T20:27:07.360+0530 [DEBUG] using github.com/zclconf/go-cty v1.18.0
+2026-07-17T20:27:07.360+0530 [INFO]  Go runtime version: go1.25.10
+2026-07-17T20:27:07.360+0530 [INFO]  CLI args: []string{"terraform", "destroy"}
+2026-07-17T20:27:07.360+0530 [DEBUG] Attempting to open CLI config file: /Users/avizway/.terraformrc
+2026-07-17T20:27:07.360+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2026-07-17T20:27:07.360+0530 [INFO]  Loading CLI configuration from /Users/avizway/.terraform.d/credentials.tfrc.json
+2026-07-17T20:27:07.360+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2026-07-17T20:27:07.360+0530 [DEBUG] ignoring non-existing provider search directory /Users/avizway/.terraform.d/plugins
+2026-07-17T20:27:07.360+0530 [DEBUG] ignoring non-existing provider search directory /Users/avizway/Library/Application Support/io.terraform/plugins
+2026-07-17T20:27:07.360+0530 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2026-07-17T20:27:07.360+0530 [INFO]  CLI command args: []string{"destroy"}
+2026-07-17T20:27:07.654+0530 [DEBUG] checking for provisioner in "."
+2026-07-17T20:27:07.655+0530 [DEBUG] checking for provisioner in "/opt/homebrew/bin"
+2026-07-17T20:27:07.656+0530 [INFO]  backend/local: starting Apply operation
+2026-07-17T20:27:07.658+0530 [DEBUG] Starting graph walk: walkInit
+2026-07-17T20:27:07.658+0530 [DEBUG] created provider logger: level=debug
+2026-07-17T20:27:07.658+0530 [INFO]  provider: configuring client automatic mTLS
+2026-07-17T20:27:07.661+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5"]
+2026-07-17T20:27:07.669+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 pid=37182
+2026-07-17T20:27:07.669+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5
+2026-07-17T20:27:07.734+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.54.0 (go1.26.4)...
+2026-07-17T20:27:07.735+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-07-17T20:27:07.735+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-07-17T20:27:07.747+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-07-17T20:27:07.747+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-07-17T20:27:07.748+0530 [INFO]  provider.terraform-provider-aws_v6.54.0_x5: configuring server automatic mTLS: timestamp="2026-07-17T20:27:07.747+0530"
+2026-07-17T20:27:07.751+0530 [DEBUG] provider: using plugin: version=5
+2026-07-17T20:27:07.751+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: plugin address: address=/var/folders/m5/zpsdbxfj30b1p_wht8fxhlw40000gn/T/plugin1778175135 network=unix timestamp="2026-07-17T20:27:07.751+0530"
+2026-07-17T20:27:08.352+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-07-17T20:27:08.358+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 id=37182
+2026-07-17T20:27:08.358+0530 [DEBUG] provider: plugin exited
+2026-07-17T20:27:08.358+0530 [DEBUG] Building and walking validate graph
+2026-07-17T20:27:08.358+0530 [DEBUG] ProviderTransformer: "aws_instance.mumbai-webserver" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-07-17T20:27:08.358+0530 [DEBUG] ReferenceTransformer: "aws_instance.mumbai-webserver" references: []
+2026-07-17T20:27:08.358+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-07-17T20:27:08.358+0530 [DEBUG] Starting graph walk: walkValidate
+2026-07-17T20:27:08.358+0530 [DEBUG] created provider logger: level=debug
+2026-07-17T20:27:08.358+0530 [INFO]  provider: configuring client automatic mTLS
+2026-07-17T20:27:08.360+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5"]
+2026-07-17T20:27:08.368+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 pid=37206
+2026-07-17T20:27:08.368+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5
+2026-07-17T20:27:08.435+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.54.0 (go1.26.4)...
+2026-07-17T20:27:08.435+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-07-17T20:27:08.435+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-07-17T20:27:08.446+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-07-17T20:27:08.446+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-07-17T20:27:08.446+0530 [INFO]  provider.terraform-provider-aws_v6.54.0_x5: configuring server automatic mTLS: timestamp="2026-07-17T20:27:08.446+0530"
+2026-07-17T20:27:08.450+0530 [DEBUG] provider: using plugin: version=5
+2026-07-17T20:27:08.450+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: plugin address: network=unix address=/var/folders/m5/zpsdbxfj30b1p_wht8fxhlw40000gn/T/plugin1818749745 timestamp="2026-07-17T20:27:08.450+0530"
+2026-07-17T20:27:08.498+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-07-17T20:27:08.501+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 id=37206
+2026-07-17T20:27:08.501+0530 [DEBUG] provider: plugin exited
+2026-07-17T20:27:08.501+0530 [INFO]  backend/local: apply calling Plan
+2026-07-17T20:27:08.501+0530 [DEBUG] Building and walking plan graph for NormalMode
+2026-07-17T20:27:08.501+0530 [DEBUG] ProviderTransformer: "aws_instance.mumbai-webserver (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-07-17T20:27:08.501+0530 [DEBUG] ReferenceTransformer: "aws_instance.mumbai-webserver (expand)" references: []
+2026-07-17T20:27:08.502+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-07-17T20:27:08.502+0530 [DEBUG] Starting graph walk: walkPlan
+2026-07-17T20:27:08.502+0530 [DEBUG] created provider logger: level=debug
+2026-07-17T20:27:08.502+0530 [INFO]  provider: configuring client automatic mTLS
+2026-07-17T20:27:08.503+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5"]
+2026-07-17T20:27:08.511+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 pid=37208
+2026-07-17T20:27:08.511+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5
+2026-07-17T20:27:08.576+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.54.0 (go1.26.4)...
+2026-07-17T20:27:08.576+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-07-17T20:27:08.576+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-07-17T20:27:08.588+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-07-17T20:27:08.588+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-07-17T20:27:08.589+0530 [INFO]  provider.terraform-provider-aws_v6.54.0_x5: configuring server automatic mTLS: timestamp="2026-07-17T20:27:08.589+0530"
+2026-07-17T20:27:08.592+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: plugin address: address=/var/folders/m5/zpsdbxfj30b1p_wht8fxhlw40000gn/T/plugin528967334 network=unix timestamp="2026-07-17T20:27:08.592+0530"
+2026-07-17T20:27:08.592+0530 [DEBUG] provider: using plugin: version=5
+2026-07-17T20:27:08.630+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Configuring Terraform AWS Provider: @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:150 tf_req_id=3fa392dd-ede5-8685-8fbe-d5e6f2beb18b tf_rpc=ConfigureProvider @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-07-17T20:27:08.630+0530"
+2026-07-17T20:27:08.630+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Resolving credentials provider: tf_req_id=3fa392dd-ede5-8685-8fbe-d5e6f2beb18b tf_rpc=ConfigureProvider tf_mux_provider="*schema.GRPCProviderServer" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-07-17T20:27:08.630+0530"
+2026-07-17T20:27:08.630+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Setting profile: tf_aws.profile=default tf_aws.profile.source=provider tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3fa392dd-ede5-8685-8fbe-d5e6f2beb18b @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 timestamp="2026-07-17T20:27:08.630+0530"
+2026-07-17T20:27:08.630+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Loading configuration: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=3fa392dd-ede5-8685-8fbe-d5e6f2beb18b @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 timestamp="2026-07-17T20:27:08.630+0530"
+2026-07-17T20:27:08.630+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Retrieving credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 tf_mux_provider="*schema.GRPCProviderServer" @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3fa392dd-ede5-8685-8fbe-d5e6f2beb18b tf_rpc=ConfigureProvider timestamp="2026-07-17T20:27:08.630+0530"
+2026-07-17T20:27:08.630+0530 [INFO]  provider.terraform-provider-aws_v6.54.0_x5: Retrieved credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:39 @module=aws.aws-base tf_req_id=3fa392dd-ede5-8685-8fbe-d5e6f2beb18b tf_rpc=ConfigureProvider tf_aws.credentials_source="SharedConfigCredentials: /Users/avizway/.aws/credentials" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-07-17T20:27:08.630+0530"
+2026-07-17T20:27:08.631+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Loading configuration: tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=3fa392dd-ede5-8685-8fbe-d5e6f2beb18b @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @module=aws.aws-base timestamp="2026-07-17T20:27:08.630+0530"
+2026-07-17T20:27:08.631+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Retrieving AWS account details: @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:188 @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3fa392dd-ede5-8685-8fbe-d5e6f2beb18b tf_rpc=ConfigureProvider timestamp="2026-07-17T20:27:08.631+0530"
+2026-07-17T20:27:08.631+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Retrieving caller identity from STS: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3fa392dd-ede5-8685-8fbe-d5e6f2beb18b @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider timestamp="2026-07-17T20:27:08.631+0530"
+2026-07-17T20:27:08.631+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: http.request.header.content_type=application/x-www-form-urlencoded http.url=https://sts.ap-south-1.amazonaws.com/ net.peer.name=sts.ap-south-1.amazonaws.com tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws http.request_content_length=43 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47
+  http.request.body=
+  | Action=GetCallerIdentity&Version=2011-06-15
+   http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" rpc.system.name=aws-api tf_req_id=3fa392dd-ede5-8685-8fbe-d5e6f2beb18b tf_rpc=ConfigureProvider aws.region=ap-south-1 http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/sts#1.44.0 m/n" http.request.header.x_amz_date=20260717T145708Z @module=aws.aws-base http.method=POST rpc.method=STS/GetCallerIdentity tf_aws.sdk=aws-sdk-go-v2 http.request.header.amz_sdk_invocation_id=352b751f-7998-4937-aa74-200a7701aaf4 http.request.header.amz_sdk_request="attempt=1; max=25" timestamp="2026-07-17T20:27:08.631+0530"
+2026-07-17T20:27:08.751+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: @module=aws.aws-base
+  http.response.body=
+  | <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <GetCallerIdentityResult>
+  |     <Arn>arn:aws:iam::655700896650:user/Avinash_T</Arn>
+  |     <UserId>AIDA*************2H4G</UserId>
+  |     <Account>655700896650</Account>
+  |   </GetCallerIdentityResult>
+  |   <ResponseMetadata>
+  |     <RequestId>8ebe6b8b-5147-4b72-a37b-a41853adcbc0</RequestId>
+  |   </ResponseMetadata>
+  | </GetCallerIdentityResponse>
+   http.response.header.content_type=text/xml http.response.header.date="Fri, 17 Jul 2026 14:57:08 GMT" http.response.header.x_amzn_requestid=8ebe6b8b-5147-4b72-a37b-a41853adcbc0 rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3fa392dd-ede5-8685-8fbe-d5e6f2beb18b tf_rpc=ConfigureProvider http.response_content_length=406 aws.region=ap-south-1 http.duration=119 tf_mux_provider="*schema.GRPCProviderServer" http.response.header.x_amz_sts_extended_request_id=MTphcC1zb3V0aC0xOlM6MTc4NDMwMDIyODc3MjpSOk9SUjdxRzNZ http.status_code=200 rpc.method=STS/GetCallerIdentity timestamp="2026-07-17T20:27:08.751+0530"
+2026-07-17T20:27:08.751+0530 [INFO]  provider.terraform-provider-aws_v6.54.0_x5: Retrieved caller identity from STS: tf_mux_provider="*schema.GRPCProviderServer" @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3fa392dd-ede5-8685-8fbe-d5e6f2beb18b tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:39 timestamp="2026-07-17T20:27:08.751+0530"
+2026-07-17T20:27:08.752+0530 [DEBUG] ReferenceTransformer: "aws_instance.mumbai-webserver" references: []
+2026-07-17T20:27:08.768+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: http.request.header.content_type=application/x-www-form-urlencoded @module=aws aws.region=ap-south-1 http.method=POST http.request.header.amz_sdk_invocation_id=581f1e73-9c95-4d0f-819b-50d179e72d48
+  http.request.body=
+  | Action=DescribeInstances&InstanceId.1=i-00e050943b88dbacd&Version=2016-11-15
+   http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.x_amz_date=20260717T145708Z http.url=https://ec2.ap-south-1.amazonaws.com/ net.peer.name=ec2.ap-south-1.amazonaws.com rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.request_content_length=76 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/C,n" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_resource_type=aws_instance http.request.header.amz_sdk_request="attempt=1; max=25" rpc.method=EC2/DescribeInstances tf_rpc=ReadResource timestamp="2026-07-17T20:27:08.768+0530"
+2026-07-17T20:27:08.952+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: http.response.header.x_amzn_requestid=b24f0ae7-d7cd-41ee-98b6-a65dd8893731 http.status_code=200 rpc.method=EC2/DescribeInstances rpc.system.name=aws-api tf_aws.signing_region="" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 @module=aws http.duration=184 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ReadResource http.response.header.server=AmazonEC2 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" http.response.header.vary=accept-encoding tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_resource_type=aws_instance http.response.header.cache_control="no-cache, no-store" http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.date="Fri, 17 Jul 2026 14:57:08 GMT" aws.region=ap-south-1
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>b24f0ae7-d7cd-41ee-98b6-a65dd8893731</requestId>
+  |     <reservationSet>
+  |         <item>
+  |             <reservationId>r-0af9997103d8f1072</reservationId>
+  |             <ownerId>655700896650</ownerId>
+  |             <groupSet/>
+  |             <instancesSet>
+  |                 <item>
+  |                     <instanceId>i-00e050943b88dbacd</instanceId>
+  |                     <imageId>ami-0b910d1016287a5e7</imageId>
+  |                     <instanceState>
+  |                         <code>16</code>
+  |                         <name>running</name>
+  |                     </instanceState>
+  |                     <privateDnsName>ip-172-31-37-117.ap-south-1.compute.internal</privateDnsName>
+  |                     <publicIpDnsNameOptions>
+  |                         <dnsHostnameType>public-ipv4-dns-name</dnsHostnameType>
+  |                         <publicIpv4DnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</publicIpv4DnsName>
+  |                     </publicIpDnsNameOptions>
+  |                     <dnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</dnsName>
+  |                     <reason/>
+  |                     <keyName>awar10-lnx-kp</keyName>
+  |                     <amiLaunchIndex>0</amiLaunchIndex>
+  |                     <productCodes/>
+  |                     <operator>
+  |                         <managed>false</managed>
+  |                         <hiddenByDefault>false</hiddenByDefault>
+  |                     </operator>
+  |                     <instanceType>t3.small</instanceType>
+  |                     <launchTime>2026-07-17T14:48:13.000Z</launchTime>
+  |                     <placement>
+  |                         <availabilityZone>ap-south-1a</availabilityZone>
+  |                         <availabilityZoneId>aps1-az1</availabilityZoneId>
+  |                         <groupName/>
+  |                         <tenancy>default</tenancy>
+  |                     </placement>
+  |                     <monitoring>
+  |                         <state>disabled</state>
+  |                     </monitoring>
+  |                     <subnetId>subnet-0be4dda5a9f236a88</subnetId>
+  |                     <vpcId>vpc-00532bb704a5dbef0</vpcId>
+  |                     <privateIpAddress>172.31.37.117</privateIpAddress>
+  |                     <ipAddress>43.205.98.140</ipAddress>
+  |                     <sourceDestCheck>true</sourceDestCheck>
+  |                     <groupSet>
+  |                         <item>
+  |                             <groupId>sg-0f1b92a14f30712ee</groupId>
+  |                             <groupName>WebServer-SG</groupName>
+  |                         </item>
+  |                     </groupSet>
+  |                     <architecture>x86_64</architecture>
+  |                     <rootDeviceType>ebs</rootDeviceType>
+  |                     <rootDeviceName>/dev/xvda</rootDeviceName>
+  |                     <blockDeviceMapping>
+  |                         <item>
+  |                             <deviceName>/dev/xvda</deviceName>
+  |                             <ebs>
+  |                                 <volumeId>vol-089dac64b66362a86</volumeId>
+  |                                 <status>attached</status>
+  |                                 <attachTime>2026-07-17T14:37:20.000Z</attachTime>
+  |                                 <deleteOnTermination>true</deleteOnTermination>
+  |                                 <ebsCardIndex>0</ebsCardIndex>
+  |                             </ebs>
+  |                         </item>
+  |                     </blockDeviceMapping>
+  |                     <virtualizationType>hvm</virtualizationType>
+  |                     <clientToken>terraform-0go8rVloNQcHkom5asrdNnKn1O</clientToken>
+  |                     <tagSet>
+  |                         <item>
+  |                             <key>Name</key>
+  |                             <value>mumbai-WebServer</value>
+  |                         </item>
+  |                     </tagSet>
+  |                     <hypervisor>xen</hypervisor>
+  |                     <networkInterfaceSet>
+  |                         <item>
+  |                             <networkInterfaceId>eni-021333468d9d92385</networkInterfaceId>
+  |                             <subnetId>subnet-0be4dda5a9f236a88</subnetId>
+  |                             <vpcId>vpc-00532bb704a5dbef0</vpcId>
+  | [truncated...]
+   timestamp="2026-07-17T20:27:08.952+0530"
+2026-07-17T20:27:08.953+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: http.request.header.amz_sdk_request="attempt=1; max=25" net.peer.name=ec2.ap-south-1.amazonaws.com tf_aws.sdk=aws-sdk-go-v2 tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_resource_type=aws_instance aws.region=ap-south-1 http.request.header.amz_sdk_invocation_id=9fb9ede9-1803-4ae7-b9f4-3b1f7140504a http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.x_amz_date=20260717T145708Z http.request_content_length=71 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws
+  http.request.body=
+  | Action=DescribeInstanceTypes&InstanceType.1=t3.small&Version=2016-11-15
+   rpc.method=EC2/DescribeInstanceTypes tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ReadResource @module=aws http.request.header.content_type=application/x-www-form-urlencoded http.url=https://ec2.ap-south-1.amazonaws.com/ http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/C,n" rpc.system.name=aws-api @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.method=POST timestamp="2026-07-17T20:27:08.953+0530"
+2026-07-17T20:27:08.994+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ReadResource @module=aws aws.region=ap-south-1 http.response.header.vary=accept-encoding rpc.method=EC2/DescribeInstanceTypes rpc.system.name=aws-api http.duration=40
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstanceTypesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>84344a07-e5b7-4e28-999e-4bcc9ac4a656</requestId>
+  |     <instanceTypeSet>
+  |         <item>
+  |             <autoRecoverySupported>true</autoRecoverySupported>
+  |             <bareMetal>false</bareMetal>
+  |             <burstablePerformanceSupported>true</burstablePerformanceSupported>
+  |             <cpuBurstModel>credit</cpuBurstModel>
+  |             <currentGeneration>true</currentGeneration>
+  |             <dedicatedHostsSupported>true</dedicatedHostsSupported>
+  |             <ebsInfo>
+  |                 <attachmentLimitType>shared</attachmentLimitType>
+  |                 <ebsOptimizedInfo>
+  |                     <baselineBandwidthInMbps>174</baselineBandwidthInMbps>
+  |                     <baselineIops>1000</baselineIops>
+  |                     <baselineThroughputInMBps>21.75</baselineThroughputInMBps>
+  |                     <maximumBandwidthInMbps>2085</maximumBandwidthInMbps>
+  |                     <maximumIops>11800</maximumIops>
+  |                     <maximumThroughputInMBps>260.625</maximumThroughputInMBps>
+  |                 </ebsOptimizedInfo>
+  |                 <ebsOptimizedSupport>default</ebsOptimizedSupport>
+  |                 <encryptionSupport>supported</encryptionSupport>
+  |                 <maximumEbsAttachments>27</maximumEbsAttachments>
+  |                 <nvmeSupport>required</nvmeSupport>
+  |             </ebsInfo>
+  |             <freeTierEligible>true</freeTierEligible>
+  |             <hibernationSupported>true</hibernationSupported>
+  |             <hypervisor>nitro</hypervisor>
+  |             <instanceStorageSupported>false</instanceStorageSupported>
+  |             <instanceType>t3.small</instanceType>
+  |             <memoryInfo>
+  |                 <sizeInMiB>2048</sizeInMiB>
+  |             </memoryInfo>
+  |             <networkInfo>
+  |                 <connectionTrackingConfiguration>
+  |                     <defaultTcpEstablishedTimeout>432000</defaultTcpEstablishedTimeout>
+  |                     <defaultUdpStreamTimeout>180</defaultUdpStreamTimeout>
+  |                     <defaultUdpTimeout>30</defaultUdpTimeout>
+  |                 </connectionTrackingConfiguration>
+  |                 <defaultNetworkCardIndex>0</defaultNetworkCardIndex>
+  |                 <efaSupported>false</efaSupported>
+  |                 <enaSrdSupported>false</enaSrdSupported>
+  |                 <enaSupport>required</enaSupport>
+  |                 <encryptionInTransitSupported>false</encryptionInTransitSupported>
+  |                 <flexibleEnaQueuesSupport>unsupported</flexibleEnaQueuesSupport>
+  |                 <ipv4AddressesPerInterface>4</ipv4AddressesPerInterface>
+  |                 <ipv6AddressesPerInterface>4</ipv6AddressesPerInterface>
+  |                 <ipv6Supported>true</ipv6Supported>
+  |                 <maximumNetworkCards>1</maximumNetworkCards>
+  |                 <maximumNetworkInterfaces>3</maximumNetworkInterfaces>
+  |                 <networkCards>
+  |                     <item>
+  |                         <baselineBandwidthInGbps>0.128</baselineBandwidthInGbps>
+  |                         <defaultEnaQueueCountPerInterface>2</defaultEnaQueueCountPerInterface>
+  |                         <maximumNetworkInterfaces>3</maximumNetworkInterfaces>
+  |                         <networkCardIndex>0</networkCardIndex>
+  |                         <networkPerformance>Up to 5 Gigabit</networkPerformance>
+  |                         <peakBandwidthInGbps>5.0</peakBandwidthInGbps>
+  |                     </item>
+  |                 </networkCards>
+  |                 <networkPerformance>Up to 5 Gigabit</networkPerformance>
+  |                 <secondaryNetworkSupported>false</secondaryNetworkSupported>
+  |                 <trafficMirroringSupport>supported</trafficMirroringSupport>
+  |             </networkInfo>
+  |             <nitroEnclavesSupport>unsupported</nitroEnclavesSupport>
+  |             <nitroTpmInfo>
+  |                 <supportedVersions>
+  |                     <item>2.0</item>
+  |                 </supportedVersions>
+  |             </nitroTpmInfo>
+  |             <nitroTpmSupport>supported</nitroTpmSupport>
+  |             <phcSupport>unsupported</phcSupport>
+  |             <placementGroupInfo>
+  |                 <supportedStrategies>
+  | [truncated...]
+   http.response.header.cache_control="no-cache, no-store" tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_resource_type=aws_instance @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.x_amzn_requestid=84344a07-e5b7-4e28-999e-4bcc9ac4a656 http.status_code=200 tf_aws.sdk=aws-sdk-go-v2 http.response.header.date="Fri, 17 Jul 2026 14:57:09 GMT" http.response.header.server=AmazonEC2 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" tf_aws.signing_region="" timestamp="2026-07-17T20:27:08.994+0530"
+2026-07-17T20:27:08.994+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: http.request.header.amz_sdk_invocation_id=85f42b4b-6967-4e51-ac8c-cc705daf88fb http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.content_type=application/x-www-form-urlencoded tf_aws.sdk=aws-sdk-go-v2 http.method=POST
+  http.request.body=
+  | Action=DescribeTags&Filter.1.Name=key&Filter.1.Value.1=aws%3Aec2launchtemplate%3Aid&Filter.2.Name=resource-id&Filter.2.Value.1=i-00e050943b88dbacd&Version=2016-11-15
+   http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/n" tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_instance tf_rpc=ReadResource http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.x_amz_date=20260717T145709Z http.url=https://ec2.ap-south-1.amazonaws.com/ tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws aws.region=ap-south-1 net.peer.name=ec2.ap-south-1.amazonaws.com rpc.method=EC2/DescribeTags rpc.system.name=aws-api tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb http.request_content_length=165 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 timestamp="2026-07-17T20:27:08.994+0530"
+2026-07-17T20:27:09.070+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: http.response.header.x_amzn_requestid=c51e1492-9782-4750-aa35-ee6b4d37b34e http.status_code=200 rpc.method=EC2/DescribeTags aws.region=ap-south-1 http.response.header.cache_control="no-cache, no-store" http.response.header.server=AmazonEC2 http.response_content_length=212 rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb @module=aws http.duration=75 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_instance @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.response.header.date="Fri, 17 Jul 2026 14:57:09 GMT" tf_rpc=ReadResource
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeTagsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>c51e1492-9782-4750-aa35-ee6b4d37b34e</requestId>
+  |     <tagSet/>
+  | </DescribeTagsResponse>
+   http.response.header.content_type=text/xml;charset=UTF-8 timestamp="2026-07-17T20:27:09.070+0530"
+2026-07-17T20:27:09.071+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent:
+  http.request.body=
+  | Action=DescribeVpcs&Version=2016-11-15&VpcId.1=vpc-00532bb704a5dbef0
+   http.request.header.amz_sdk_invocation_id=3229ce5f-9699-40e5-ab62-92198d65e120 http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_date=20260717T145709Z net.peer.name=ec2.ap-south-1.amazonaws.com @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 aws.region=ap-south-1 http.request_content_length=68 tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_rpc=ReadResource @module=aws http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/C,n" rpc.system.name=aws-api tf_aws.signing_region="" tf_resource_type=aws_instance http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.url=https://ec2.ap-south-1.amazonaws.com/ rpc.method=EC2/DescribeVpcs tf_mux_provider="*schema.GRPCProviderServer" http.method=POST timestamp="2026-07-17T20:27:09.070+0530"
+2026-07-17T20:27:09.122+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.response.header.date="Fri, 17 Jul 2026 14:57:09 GMT" http.response_content_length=1136 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ReadResource aws.region=ap-south-1 http.response.header.cache_control="no-cache, no-store" http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" rpc.method=EC2/DescribeVpcs tf_mux_provider="*schema.GRPCProviderServer" @module=aws http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.server=AmazonEC2 http.response.header.x_amzn_requestid=3b56063f-08e2-40d2-bf85-c9e762ced5a4 http.status_code=200 tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.duration=51
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeVpcsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>3b56063f-08e2-40d2-bf85-c9e762ced5a4</requestId>
+  |     <vpcSet>
+  |         <item>
+  |             <vpcId>vpc-00532bb704a5dbef0</vpcId>
+  |             <ownerId>655700896650</ownerId>
+  |             <state>available</state>
+  |             <cidrBlock>172.31.0.0/16</cidrBlock>
+  |             <cidrBlockAssociationSet>
+  |                 <item>
+  |                     <cidrBlock>172.31.0.0/16</cidrBlock>
+  |                     <associationId>vpc-cidr-assoc-00f298ef0e3915a6f</associationId>
+  |                     <cidrBlockState>
+  |                         <state>associated</state>
+  |                     </cidrBlockState>
+  |                 </item>
+  |             </cidrBlockAssociationSet>
+  |             <dhcpOptionsId>dopt-025a811ab509e237a</dhcpOptionsId>
+  |             <instanceTenancy>default</instanceTenancy>
+  |             <isDefault>true</isDefault>
+  |             <blockPublicAccessStates>
+  |                 <internetGatewayBlockMode>off</internetGatewayBlockMode>
+  |             </blockPublicAccessStates>
+  |         </item>
+  |     </vpcSet>
+  | </DescribeVpcsResponse>
+   rpc.system.name=aws-api tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_resource_type=aws_instance timestamp="2026-07-17T20:27:09.122+0530"
+2026-07-17T20:27:09.122+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: [DEBUG] Setting Security Group IDs: []string{"sg-0f1b92a14f30712ee"}
+2026-07-17T20:27:09.122+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: [DEBUG] Setting Security Group Names: []string{"WebServer-SG"}
+2026-07-17T20:27:09.122+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent:
+  http.request.body=
+  | Action=DescribeInstanceAttribute&Attribute=instanceInitiatedShutdownBehavior&InstanceId=i-00e050943b88dbacd&Version=2016-11-15
+   http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_date=20260717T145709Z http.request_content_length=126 http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/n" rpc.system.name=aws-api aws.region=ap-south-1 http.method=POST http.request.header.amz_sdk_request="attempt=1; max=25" rpc.method=EC2/DescribeInstanceAttribute tf_aws.signing_region="" tf_resource_type=aws_instance @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.request.header.amz_sdk_invocation_id=d702b73b-f8b1-43f8-bc93-38d14fd556e9 http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.url=https://ec2.ap-south-1.amazonaws.com/ net.peer.name=ec2.ap-south-1.amazonaws.com tf_aws.sdk=aws-sdk-go-v2 tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_rpc=ReadResource timestamp="2026-07-17T20:27:09.122+0530"
+2026-07-17T20:27:09.269+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received:
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstanceAttributeResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>523bba7c-620d-4ae3-b196-53b129a19ae9</requestId>
+  |     <instanceId>i-00e050943b88dbacd</instanceId>
+  |     <instanceInitiatedShutdownBehavior>
+  |         <value>stop</value>
+  |     </instanceInitiatedShutdownBehavior>
+  | </DescribeInstanceAttributeResponse>
+   http.response.header.x_amzn_requestid=523bba7c-620d-4ae3-b196-53b129a19ae9 tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_rpc=ReadResource @module=aws http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.server=AmazonEC2 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" http.status_code=200 rpc.method=EC2/DescribeInstanceAttribute @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 aws.region=ap-south-1 http.response.header.date="Fri, 17 Jul 2026 14:57:09 GMT" http.response_content_length=382 tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_instance http.duration=146 http.response.header.cache_control="no-cache, no-store" rpc.system.name=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb timestamp="2026-07-17T20:27:09.269+0530"
+2026-07-17T20:27:09.270+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: http.request.header.content_type=application/x-www-form-urlencoded http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/n" net.peer.name=ec2.ap-south-1.amazonaws.com tf_mux_provider="*schema.GRPCProviderServer" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.request.header.amz_sdk_invocation_id=50075609-7709-40fb-9970-88f0d245ab00 http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request_content_length=74 http.url=https://ec2.ap-south-1.amazonaws.com/ rpc.method=EC2/DescribeVolumes aws.region=ap-south-1 http.method=POST tf_aws.signing_region="" tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_rpc=ReadResource @module=aws
+  http.request.body=
+  | Action=DescribeVolumes&Version=2016-11-15&VolumeId.1=vol-089dac64b66362a86
+   http.request.header.x_amz_date=20260717T145709Z rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_instance timestamp="2026-07-17T20:27:09.270+0530"
+2026-07-17T20:27:09.353+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" http.response.header.x_amzn_requestid=7cac6453-01dd-4a34-9472-84480b2b29b0 http.status_code=200 rpc.method=EC2/DescribeVolumes rpc.system.name=aws-api aws.region=ap-south-1 http.response.header.cache_control="no-cache, no-store" http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" http.response_content_length=1755 tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 @module=aws http.duration=82 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_instance tf_rpc=ReadResource
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeVolumesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>7cac6453-01dd-4a34-9472-84480b2b29b0</requestId>
+  |     <volumeSet>
+  |         <item>
+  |             <volumeId>vol-089dac64b66362a86</volumeId>
+  |             <size>8</size>
+  |             <snapshotId>snap-029826f1590ec4085</snapshotId>
+  |             <availabilityZone>ap-south-1a</availabilityZone>
+  |             <availabilityZoneId>aps1-az1</availabilityZoneId>
+  |             <status>in-use</status>
+  |             <createTime>2026-07-17T14:37:20.861Z</createTime>
+  |             <attachmentSet>
+  |                 <item>
+  |                     <volumeId>vol-089dac64b66362a86</volumeId>
+  |                     <instanceId>i-00e050943b88dbacd</instanceId>
+  |                     <device>/dev/xvda</device>
+  |                     <status>attached</status>
+  |                     <attachTime>2026-07-17T14:37:20.000Z</attachTime>
+  |                     <deleteOnTermination>true</deleteOnTermination>
+  |                     <ebsCardIndex>0</ebsCardIndex>
+  |                 </item>
+  |             </attachmentSet>
+  |             <volumeType>gp3</volumeType>
+  |             <iops>3000</iops>
+  |             <encrypted>true</encrypted>
+  |             <kmsKeyId>arn:aws:kms:ap-south-1:655700896650:key/e68d0e44-73e3-4bbb-9abc-37176e1e830f</kmsKeyId>
+  |             <multiAttachEnabled>false</multiAttachEnabled>
+  |             <throughput>125</throughput>
+  |             <operator>
+  |                 <managed>false</managed>
+  |                 <hiddenByDefault>false</hiddenByDefault>
+  |             </operator>
+  |             <volumeArn>arn:aws:ec2:ap-south-1:655700896650:volume/vol-089dac64b66362a86</volumeArn>
+  |             <ownerId>655700896650</ownerId>
+  |         </item>
+  |     </volumeSet>
+  | </DescribeVolumesResponse>
+   http.response.header.date="Fri, 17 Jul 2026 14:57:09 GMT" http.response.header.server=AmazonEC2 timestamp="2026-07-17T20:27:09.353+0530"
+2026-07-17T20:27:09.354+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_resource_type=aws_instance @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.method=POST http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_date=20260717T145709Z http.request_content_length=107 http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/n" rpc.system.name=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws http.request.header.amz_sdk_invocation_id=ca176ea0-a216-4366-b304-272ab6dee062 http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" net.peer.name=ec2.ap-south-1.amazonaws.com tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" @module=aws aws.region=ap-south-1
+  http.request.body=
+  | Action=DescribeInstanceAttribute&Attribute=disableApiStop&InstanceId=i-00e050943b88dbacd&Version=2016-11-15
+   http.url=https://ec2.ap-south-1.amazonaws.com/ tf_aws.signing_region="" tf_rpc=ReadResource http.request.header.amz_sdk_request="attempt=1; max=25" rpc.method=EC2/DescribeInstanceAttribute timestamp="2026-07-17T20:27:09.353+0530"
+2026-07-17T20:27:09.490+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.date="Fri, 17 Jul 2026 14:57:09 GMT" http.status_code=200 rpc.method=EC2/DescribeInstanceAttribute rpc.system.name=aws-api tf_resource_type=aws_instance aws.region=ap-south-1 http.response.header.cache_control="no-cache, no-store" http.response.header.x_amzn_requestid=3d81c726-bfde-4ed8-b22c-1dc778626304 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_rpc=ReadResource @module=aws
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstanceAttributeResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>3d81c726-bfde-4ed8-b22c-1dc778626304</requestId>
+  |     <instanceId>i-00e050943b88dbacd</instanceId>
+  |     <disableApiStop>
+  |         <value>false</value>
+  |     </disableApiStop>
+  | </DescribeInstanceAttributeResponse>
+   http.response.header.server=AmazonEC2 http.response_content_length=345 tf_aws.signing_region="" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.duration=136 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-07-17T20:27:09.490+0530"
+2026-07-17T20:27:09.491+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: aws.region=ap-south-1 http.request.header.amz_sdk_invocation_id=ea31b4fa-23fb-4596-a4b6-13b83f7aaf40 http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/n" net.peer.name=ec2.ap-south-1.amazonaws.com @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.request.header.x_amz_date=20260717T145709Z rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_instance tf_rpc=ReadResource http.method=POST
+  http.request.body=
+  | Action=DescribeInstanceAttribute&Attribute=disableApiTermination&InstanceId=i-00e050943b88dbacd&Version=2016-11-15
+   http.request.header.content_type=application/x-www-form-urlencoded http.request_content_length=114 http.url=https://ec2.ap-south-1.amazonaws.com/ rpc.method=EC2/DescribeInstanceAttribute tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws http.request.header.amz_sdk_request="attempt=1; max=25" tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb timestamp="2026-07-17T20:27:09.491+0530"
+2026-07-17T20:27:09.627+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: http.duration=135 http.response.header.date="Fri, 17 Jul 2026 14:57:09 GMT" http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ReadResource @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 @module=aws aws.region=ap-south-1
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstanceAttributeResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>dc1c8e79-33a0-4b4f-97b6-351ccfc23efd</requestId>
+  |     <instanceId>i-00e050943b88dbacd</instanceId>
+  |     <disableApiTermination>
+  |         <value>false</value>
+  |     </disableApiTermination>
+  | </DescribeInstanceAttributeResponse>
+   http.response.header.content_type=text/xml;charset=UTF-8 http.status_code=200 rpc.method=EC2/DescribeInstanceAttribute http.response.header.cache_control="no-cache, no-store" http.response.header.x_amzn_requestid=dc1c8e79-33a0-4b4f-97b6-351ccfc23efd tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb http.response.header.server=AmazonEC2 http.response_content_length=359 rpc.system.name=aws-api tf_resource_type=aws_instance timestamp="2026-07-17T20:27:09.627+0530"
+2026-07-17T20:27:09.628+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: http.url=https://ec2.ap-south-1.amazonaws.com/ tf_aws.sdk=aws-sdk-go-v2 tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_rpc=ReadResource
+  http.request.body=
+  | Action=DescribeInstanceAttribute&Attribute=userData&InstanceId=i-00e050943b88dbacd&Version=2016-11-15
+   http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.x_amz_date=20260717T145709Z tf_mux_provider="*schema.GRPCProviderServer" http.method=POST http.request.header.amz_sdk_invocation_id=2aae2f59-0367-4172-8bd4-e2712b892801 http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.content_type=application/x-www-form-urlencoded http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/n" net.peer.name=ec2.ap-south-1.amazonaws.com rpc.system.name=aws-api tf_aws.signing_region="" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 @module=aws aws.region=ap-south-1 http.request_content_length=101 rpc.method=EC2/DescribeInstanceAttribute tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_instance timestamp="2026-07-17T20:27:09.627+0530"
+2026-07-17T20:27:09.749+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: http.response.header.server=AmazonEC2 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" rpc.system.name=aws-api tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_rpc=ReadResource aws.region=ap-south-1
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstanceAttributeResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>4b8c7efd-3d78-43c4-872e-a47467dc69c8</requestId>
+  |     <instanceId>i-00e050943b88dbacd</instanceId>
+  |     <userData/>
+  | </DescribeInstanceAttributeResponse>
+   rpc.method=EC2/DescribeInstanceAttribute tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_instance http.duration=121 http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.date="Fri, 17 Jul 2026 14:57:09 GMT" http.response_content_length=289 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 @module=aws http.response.header.cache_control="no-cache, no-store" http.response.header.x_amzn_requestid=4b8c7efd-3d78-43c4-872e-a47467dc69c8 http.status_code=200 tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-07-17T20:27:09.749+0530"
+2026-07-17T20:27:09.749+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: rpc.system.name=aws-api tf_provider_addr=registry.terraform.io/hashicorp/aws http.request.header.x_amz_date=20260717T145709Z http.request_content_length=95 http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.url=https://ec2.ap-south-1.amazonaws.com/ http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/C,n" aws.region=ap-south-1 rpc.method=EC2/DescribeInstanceCreditSpecifications tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_resource_type=aws_instance tf_rpc=ReadResource @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 @module=aws http.method=POST http.request.header.amz_sdk_invocation_id=03f76eeb-37b8-4398-acab-d8106f6db052 net.peer.name=ec2.ap-south-1.amazonaws.com tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb
+  http.request.body=
+  | Action=DescribeInstanceCreditSpecifications&InstanceId.1=i-00e050943b88dbacd&Version=2016-11-15
+   http.request.header.content_type=application/x-www-form-urlencoded timestamp="2026-07-17T20:27:09.749+0530"
+2026-07-17T20:27:09.787+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 @module=aws http.response.header.cache_control="no-cache, no-store" http.response.header.server=AmazonEC2 tf_aws.signing_region="" tf_req_id=30b4526e-35d4-ad48-429b-94edd5624ecb tf_rpc=ReadResource aws.region=ap-south-1 http.duration=37 http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.date="Fri, 17 Jul 2026 14:57:09 GMT" http.response.header.vary=accept-encoding rpc.method=EC2/DescribeInstanceCreditSpecifications tf_provider_addr=registry.terraform.io/hashicorp/aws http.response.header.strict_transport_security="max-age=31536000; includeSubDomains"
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstanceCreditSpecificationsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>96e0532a-648a-4c1b-967a-7fd389d018c0</requestId>
+  |     <instanceCreditSpecificationSet>
+  |         <item>
+  |             <cpuCredits>unlimited</cpuCredits>
+  |             <instanceId>i-00e050943b88dbacd</instanceId>
+  |         </item>
+  |     </instanceCreditSpecificationSet>
+  | </DescribeInstanceCreditSpecificationsResponse>
+   http.response.header.x_amzn_requestid=96e0532a-648a-4c1b-967a-7fd389d018c0 http.status_code=200 tf_aws.sdk=aws-sdk-go-v2 tf_resource_type=aws_instance rpc.system.name=aws-api tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-07-17T20:27:09.787+0530"
+2026-07-17T20:27:09.795+0530 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_instance.mumbai-webserver, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .user_data_replace_on_change: planned value cty.False for a non-computed attribute
+      - .get_password_data: planned value cty.False for a non-computed attribute
+      - .hibernation: planned value cty.False for a non-computed attribute
+      - .source_dest_check: planned value cty.True for a non-computed attribute
+      - .force_destroy: planned value cty.False for a non-computed attribute
+      - .metadata_options: block count in plan (1) disagrees with count in config (0)
+      - .capacity_reservation_specification: block count in plan (1) disagrees with count in config (0)
+      - .cpu_options: block count in plan (1) disagrees with count in config (0)
+      - .credit_specification: block count in plan (1) disagrees with count in config (0)
+      - .private_dns_name_options: block count in plan (1) disagrees with count in config (0)
+      - .enclave_options: block count in plan (1) disagrees with count in config (0)
+      - .maintenance_options: block count in plan (1) disagrees with count in config (0)
+      - .primary_network_interface: block count in plan (1) disagrees with count in config (0)
+      - .root_block_device: block count in plan (1) disagrees with count in config (0)
+2026-07-17T20:27:09.796+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-07-17T20:27:09.800+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 id=37208
+2026-07-17T20:27:09.800+0530 [DEBUG] provider: plugin exited
+2026-07-17T20:27:09.801+0530 [DEBUG] Building and walking plan graph for DestroyMode
+2026-07-17T20:27:09.801+0530 [DEBUG] ProviderTransformer: "aws_instance.mumbai-webserver (destroy)" (*terraform.NodePlanDestroyableResourceInstance) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-07-17T20:27:09.801+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-07-17T20:27:09.801+0530 [DEBUG] Starting graph walk: walkPlanDestroy
+2026-07-17T20:27:09.801+0530 [DEBUG] created provider logger: level=debug
+2026-07-17T20:27:09.801+0530 [INFO]  provider: configuring client automatic mTLS
+2026-07-17T20:27:09.804+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5"]
+2026-07-17T20:27:09.816+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 pid=37226
+2026-07-17T20:27:09.816+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5
+2026-07-17T20:27:09.893+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.54.0 (go1.26.4)...
+2026-07-17T20:27:09.893+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-07-17T20:27:09.893+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-07-17T20:27:09.905+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-07-17T20:27:09.905+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-07-17T20:27:09.906+0530 [INFO]  provider.terraform-provider-aws_v6.54.0_x5: configuring server automatic mTLS: timestamp="2026-07-17T20:27:09.906+0530"
+2026-07-17T20:27:09.910+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: plugin address: address=/var/folders/m5/zpsdbxfj30b1p_wht8fxhlw40000gn/T/plugin4235938191 network=unix timestamp="2026-07-17T20:27:09.910+0530"
+2026-07-17T20:27:09.910+0530 [DEBUG] provider: using plugin: version=5
+2026-07-17T20:27:09.952+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Configuring Terraform AWS Provider: @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=5faa7cdf-949f-cc41-c927-d758cf8e832c @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:150 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp="2026-07-17T20:27:09.952+0530"
+2026-07-17T20:27:09.952+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Resolving credentials provider: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=5faa7cdf-949f-cc41-c927-d758cf8e832c tf_rpc=ConfigureProvider timestamp="2026-07-17T20:27:09.952+0530"
+2026-07-17T20:27:09.952+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Setting profile: tf_aws.profile=default tf_aws.profile.source=provider tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=5faa7cdf-949f-cc41-c927-d758cf8e832c tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-07-17T20:27:09.952+0530"
+2026-07-17T20:27:09.952+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Loading configuration: @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 tf_req_id=5faa7cdf-949f-cc41-c927-d758cf8e832c tf_rpc=ConfigureProvider timestamp="2026-07-17T20:27:09.952+0530"
+2026-07-17T20:27:09.952+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Retrieving credentials: @module=aws.aws-base tf_req_id=5faa7cdf-949f-cc41-c927-d758cf8e832c @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp="2026-07-17T20:27:09.952+0530"
+2026-07-17T20:27:09.952+0530 [INFO]  provider.terraform-provider-aws_v6.54.0_x5: Retrieved credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:39 @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /Users/avizway/.aws/credentials" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=5faa7cdf-949f-cc41-c927-d758cf8e832c timestamp="2026-07-17T20:27:09.952+0530"
+2026-07-17T20:27:09.952+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Loading configuration: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=5faa7cdf-949f-cc41-c927-d758cf8e832c tf_rpc=ConfigureProvider timestamp="2026-07-17T20:27:09.952+0530"
+2026-07-17T20:27:09.952+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Retrieving AWS account details: tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:188 @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=5faa7cdf-949f-cc41-c927-d758cf8e832c timestamp="2026-07-17T20:27:09.952+0530"
+2026-07-17T20:27:09.952+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Retrieving caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=5faa7cdf-949f-cc41-c927-d758cf8e832c tf_rpc=ConfigureProvider @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-07-17T20:27:09.952+0530"
+2026-07-17T20:27:09.953+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: http.url=https://sts.ap-south-1.amazonaws.com/ net.peer.name=sts.ap-south-1.amazonaws.com rpc.method=STS/GetCallerIdentity rpc.system.name=aws-api http.request.header.x_amz_date=20260717T145709Z http.request_content_length=43 http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/sts#1.44.0 m/n" http.method=POST tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=5faa7cdf-949f-cc41-c927-d758cf8e832c @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base http.request.header.content_type=application/x-www-form-urlencoded tf_aws.sdk=aws-sdk-go-v2 tf_rpc=ConfigureProvider aws.region=ap-south-1
+  http.request.body=
+  | Action=GetCallerIdentity&Version=2011-06-15
+   http.request.header.amz_sdk_invocation_id=e7415711-546e-4816-9d9a-b043499b4043 timestamp="2026-07-17T20:27:09.953+0530"
+2026-07-17T20:27:10.041+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: aws.region=ap-south-1 http.duration=88 rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider
+  http.response.body=
+  | <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <GetCallerIdentityResult>
+  |     <Arn>arn:aws:iam::655700896650:user/Avinash_T</Arn>
+  |     <UserId>AIDA*************2H4G</UserId>
+  |     <Account>655700896650</Account>
+  |   </GetCallerIdentityResult>
+  |   <ResponseMetadata>
+  |     <RequestId>99901f09-9476-4a39-a0a2-cbe78f48b144</RequestId>
+  |   </ResponseMetadata>
+  | </GetCallerIdentityResponse>
+   rpc.method=STS/GetCallerIdentity @module=aws.aws-base http.response.header.x_amz_sts_extended_request_id=MTphcC1zb3V0aC0xOlM6MTc4NDMwMDIzMDA2MTpSOkdETVBqc2Vx http.status_code=200 tf_mux_provider="*schema.GRPCProviderServer" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 http.response.header.content_type=text/xml http.response.header.date="Fri, 17 Jul 2026 14:57:10 GMT" http.response.header.x_amzn_requestid=99901f09-9476-4a39-a0a2-cbe78f48b144 http.response_content_length=406 tf_req_id=5faa7cdf-949f-cc41-c927-d758cf8e832c timestamp="2026-07-17T20:27:10.041+0530"
+2026-07-17T20:27:10.041+0530 [INFO]  provider.terraform-provider-aws_v6.54.0_x5: Retrieved caller identity from STS: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:39 @module=aws.aws-base tf_req_id=5faa7cdf-949f-cc41-c927-d758cf8e832c timestamp="2026-07-17T20:27:10.041+0530"
+2026-07-17T20:27:10.053+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-07-17T20:27:10.057+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 id=37226
+2026-07-17T20:27:10.057+0530 [DEBUG] provider: plugin exited
+2026-07-17T20:27:10.057+0530 [DEBUG] building apply graph to check for errors
+2026-07-17T20:27:10.057+0530 [DEBUG] ProviderTransformer: "aws_instance.mumbai-webserver (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-07-17T20:27:10.057+0530 [DEBUG] ProviderTransformer: "aws_instance.mumbai-webserver (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-07-17T20:27:10.057+0530 [DEBUG] ReferenceTransformer: "aws_instance.mumbai-webserver (expand)" references: []
+2026-07-17T20:27:10.057+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-07-17T20:27:10.112+0530 [DEBUG] command: asking for input: "\nDo you really want to destroy all resources?"
+2026-07-17T20:27:14.629+0530 [INFO]  backend/local: apply calling Apply
+2026-07-17T20:27:14.629+0530 [DEBUG] Building and walking apply graph for DestroyMode plan
+2026-07-17T20:27:14.630+0530 [DEBUG] ProviderTransformer: "aws_instance.mumbai-webserver (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-07-17T20:27:14.630+0530 [DEBUG] ProviderTransformer: "aws_instance.mumbai-webserver (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-07-17T20:27:14.630+0530 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-07-17T20:27:14.630+0530 [DEBUG] ReferenceTransformer: "aws_instance.mumbai-webserver (expand)" references: []
+2026-07-17T20:27:14.630+0530 [DEBUG] Starting graph walk: walkDestroy
+2026-07-17T20:27:14.630+0530 [DEBUG] created provider logger: level=debug
+2026-07-17T20:27:14.630+0530 [INFO]  provider: configuring client automatic mTLS
+2026-07-17T20:27:14.633+0530 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5"]
+2026-07-17T20:27:14.649+0530 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 pid=37248
+2026-07-17T20:27:14.649+0530 [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5
+2026-07-17T20:27:14.729+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.54.0 (go1.26.4)...
+2026-07-17T20:27:14.729+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-07-17T20:27:14.729+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-07-17T20:27:14.742+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-07-17T20:27:14.742+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-07-17T20:27:14.743+0530 [INFO]  provider.terraform-provider-aws_v6.54.0_x5: configuring server automatic mTLS: timestamp="2026-07-17T20:27:14.743+0530"
+2026-07-17T20:27:14.746+0530 [DEBUG] provider: using plugin: version=5
+2026-07-17T20:27:14.746+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: plugin address: network=unix address=/var/folders/m5/zpsdbxfj30b1p_wht8fxhlw40000gn/T/plugin3012597211 timestamp="2026-07-17T20:27:14.746+0530"
+2026-07-17T20:27:14.785+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Configuring Terraform AWS Provider: tf_req_id=f49ab14f-66cd-86e1-c024-293aa959b422 @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:150 @module=aws tf_rpc=ConfigureProvider tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-07-17T20:27:14.785+0530"
+2026-07-17T20:27:14.785+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Resolving credentials provider: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base tf_req_id=f49ab14f-66cd-86e1-c024-293aa959b422 timestamp="2026-07-17T20:27:14.785+0530"
+2026-07-17T20:27:14.785+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Setting profile: tf_aws.profile=default tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=f49ab14f-66cd-86e1-c024-293aa959b422 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 tf_aws.profile.source=provider tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws.aws-base timestamp="2026-07-17T20:27:14.785+0530"
+2026-07-17T20:27:14.785+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Loading configuration: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @module=aws.aws-base tf_req_id=f49ab14f-66cd-86e1-c024-293aa959b422 timestamp="2026-07-17T20:27:14.785+0530"
+2026-07-17T20:27:14.786+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Retrieving credentials: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f49ab14f-66cd-86e1-c024-293aa959b422 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider timestamp="2026-07-17T20:27:14.786+0530"
+2026-07-17T20:27:14.786+0530 [INFO]  provider.terraform-provider-aws_v6.54.0_x5: Retrieved credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:39 tf_aws.credentials_source="SharedConfigCredentials: /Users/avizway/.aws/credentials" tf_req_id=f49ab14f-66cd-86e1-c024-293aa959b422 tf_rpc=ConfigureProvider @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-07-17T20:27:14.786+0530"
+2026-07-17T20:27:14.786+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Loading configuration: tf_req_id=f49ab14f-66cd-86e1-c024-293aa959b422 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp="2026-07-17T20:27:14.786+0530"
+2026-07-17T20:27:14.786+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Retrieving AWS account details: @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=f49ab14f-66cd-86e1-c024-293aa959b422 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:188 tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-07-17T20:27:14.786+0530"
+2026-07-17T20:27:14.786+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: Retrieving caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f49ab14f-66cd-86e1-c024-293aa959b422 timestamp="2026-07-17T20:27:14.786+0530"
+2026-07-17T20:27:14.786+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: aws.region=ap-south-1 http.request.header.content_type=application/x-www-form-urlencoded tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=f49ab14f-66cd-86e1-c024-293aa959b422
+  http.request.body=
+  | Action=GetCallerIdentity&Version=2011-06-15
+   http.request.header.amz_sdk_invocation_id=1d54f0cf-dd00-4c8d-b349-58e48ca45fea http.request.header.x_amz_date=20260717T145714Z rpc.method=STS/GetCallerIdentity tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request_content_length=43 http.url=https://sts.ap-south-1.amazonaws.com/ http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/sts#1.44.0 m/n" net.peer.name=sts.ap-south-1.amazonaws.com rpc.system.name=aws-api @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base http.method=POST tf_aws.sdk=aws-sdk-go-v2 timestamp="2026-07-17T20:27:14.786+0530"
+2026-07-17T20:27:14.868+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: tf_req_id=f49ab14f-66cd-86e1-c024-293aa959b422 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base
+  http.response.body=
+  | <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <GetCallerIdentityResult>
+  |     <Arn>arn:aws:iam::655700896650:user/Avinash_T</Arn>
+  |     <UserId>AIDA*************2H4G</UserId>
+  |     <Account>655700896650</Account>
+  |   </GetCallerIdentityResult>
+  |   <ResponseMetadata>
+  |     <RequestId>365daca2-c9f8-4107-97bc-30867d5c1a8a</RequestId>
+  |   </ResponseMetadata>
+  | </GetCallerIdentityResponse>
+   http.response.header.content_type=text/xml aws.region=ap-south-1 http.duration=82 http.response.header.x_amzn_requestid=365daca2-c9f8-4107-97bc-30867d5c1a8a rpc.system.name=aws-api tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws http.response_content_length=406 http.status_code=200 rpc.method=STS/GetCallerIdentity tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" http.response.header.date="Fri, 17 Jul 2026 14:57:14 GMT" http.response.header.x_amz_sts_extended_request_id=MTphcC1zb3V0aC0xOlM6MTc4NDMwMDIzNDg5MDpSOkhvalhRUVRm timestamp="2026-07-17T20:27:14.868+0530"
+2026-07-17T20:27:14.868+0530 [INFO]  provider.terraform-provider-aws_v6.54.0_x5: Retrieved caller identity from STS: @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f49ab14f-66cd-86e1-c024-293aa959b422 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:39 tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-07-17T20:27:14.868+0530"
+2026-07-17T20:27:14.881+0530 [INFO]  Starting apply for aws_instance.mumbai-webserver
+2026-07-17T20:27:14.881+0530 [DEBUG] aws_instance.mumbai-webserver: applying the planned Delete change
+2026-07-17T20:27:14.882+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: [DEBUG] Terminating EC2 Instance: i-00e050943b88dbacd
+2026-07-17T20:27:14.883+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: rpc.method=EC2/TerminateInstances tf_aws.signing_region="" tf_rpc=ApplyResourceChange http.request.header.amz_sdk_invocation_id=8a520e7f-aa17-4775-839c-64c9de6b240d tf_mux_provider="*schema.GRPCProviderServer" @module=aws
+  http.request.body=
+  | Action=TerminateInstances&InstanceId.1=i-00e050943b88dbacd&Version=2016-11-15
+   http.request.header.x_amz_date=20260717T145714Z http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/n" net.peer.name=ec2.ap-south-1.amazonaws.com rpc.system.name=aws-api @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 aws.region=ap-south-1 http.method=POST http.request_content_length=77 tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a tf_resource_type=aws_instance http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.content_type=application/x-www-form-urlencoded http.url=https://ec2.ap-south-1.amazonaws.com/ timestamp="2026-07-17T20:27:14.882+0530"
+2026-07-17T20:27:15.263+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: http.response.header.x_amzn_requestid=bf99b9ff-ccdd-4c56-ab23-0998e1593e9e http.response_content_length=594 rpc.system.name=aws-api aws.region=ap-south-1 http.response.header.cache_control="no-cache, no-store" http.response.header.date="Fri, 17 Jul 2026 14:57:15 GMT" http.status_code=200 rpc.method=EC2/TerminateInstances tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a tf_resource_type=aws_instance
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <TerminateInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>bf99b9ff-ccdd-4c56-ab23-0998e1593e9e</requestId>
+  |     <instancesSet>
+  |         <item>
+  |             <instanceId>i-00e050943b88dbacd</instanceId>
+  |             <currentState>
+  |                 <code>32</code>
+  |                 <name>shutting-down</name>
+  |             </currentState>
+  |             <previousState>
+  |                 <code>16</code>
+  |                 <name>running</name>
+  |             </previousState>
+  |         </item>
+  |     </instancesSet>
+  | </TerminateInstancesResponse>
+   http.response.header.content_type=text/xml;charset=UTF-8 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" tf_aws.sdk=aws-sdk-go-v2 tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 @module=aws http.duration=380 http.response.header.server=AmazonEC2 timestamp="2026-07-17T20:27:15.263+0530"
+2026-07-17T20:27:25.264+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: rpc.system.name=aws-api tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a tf_rpc=ApplyResourceChange http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/C,n" tf_resource_type=aws_instance @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.method=POST
+  http.request.body=
+  | Action=DescribeInstances&InstanceId.1=i-00e050943b88dbacd&Version=2016-11-15
+   http.request.header.amz_sdk_invocation_id=05ef8544-db47-4d6b-8432-31545059a267 rpc.method=EC2/DescribeInstances tf_aws.signing_region="" @module=aws http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_date=20260717T145725Z http.request_content_length=76 net.peer.name=ec2.ap-south-1.amazonaws.com tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws aws.region=ap-south-1 http.url=https://ec2.ap-south-1.amazonaws.com/ timestamp="2026-07-17T20:27:25.264+0530"
+2026-07-17T20:27:25.353+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 aws.region=ap-south-1 http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.server=AmazonEC2 http.response.header.vary=accept-encoding tf_aws.sdk=aws-sdk-go-v2 @module=aws
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>fc35156c-a53a-4a56-bbe9-9c2281ba93a7</requestId>
+  |     <reservationSet>
+  |         <item>
+  |             <reservationId>r-0af9997103d8f1072</reservationId>
+  |             <ownerId>655700896650</ownerId>
+  |             <groupSet/>
+  |             <instancesSet>
+  |                 <item>
+  |                     <instanceId>i-00e050943b88dbacd</instanceId>
+  |                     <imageId>ami-0b910d1016287a5e7</imageId>
+  |                     <instanceState>
+  |                         <code>32</code>
+  |                         <name>shutting-down</name>
+  |                     </instanceState>
+  |                     <privateDnsName>ip-172-31-37-117.ap-south-1.compute.internal</privateDnsName>
+  |                     <publicIpDnsNameOptions>
+  |                         <dnsHostnameType>public-ipv4-dns-name</dnsHostnameType>
+  |                         <publicIpv4DnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</publicIpv4DnsName>
+  |                     </publicIpDnsNameOptions>
+  |                     <dnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</dnsName>
+  |                     <reason>User initiated (2026-07-17 14:57:15 GMT)</reason>
+  |                     <keyName>awar10-lnx-kp</keyName>
+  |                     <amiLaunchIndex>0</amiLaunchIndex>
+  |                     <productCodes/>
+  |                     <operator>
+  |                         <managed>false</managed>
+  |                         <hiddenByDefault>false</hiddenByDefault>
+  |                     </operator>
+  |                     <instanceType>t3.small</instanceType>
+  |                     <launchTime>2026-07-17T14:48:13.000Z</launchTime>
+  |                     <placement>
+  |                         <availabilityZone>ap-south-1a</availabilityZone>
+  |                         <availabilityZoneId>aps1-az1</availabilityZoneId>
+  |                         <groupName/>
+  |                         <tenancy>default</tenancy>
+  |                     </placement>
+  |                     <monitoring>
+  |                         <state>disabled</state>
+  |                     </monitoring>
+  |                     <subnetId>subnet-0be4dda5a9f236a88</subnetId>
+  |                     <vpcId>vpc-00532bb704a5dbef0</vpcId>
+  |                     <privateIpAddress>172.31.37.117</privateIpAddress>
+  |                     <ipAddress>43.205.98.140</ipAddress>
+  |                     <sourceDestCheck>true</sourceDestCheck>
+  |                     <groupSet>
+  |                         <item>
+  |                             <groupId>sg-0f1b92a14f30712ee</groupId>
+  |                             <groupName>WebServer-SG</groupName>
+  |                         </item>
+  |                     </groupSet>
+  |                     <stateReason>
+  |                         <code>Client.UserInitiatedShutdown</code>
+  |                         <message>Client.UserInitiatedShutdown: User initiated shutdown</message>
+  |                     </stateReason>
+  |                     <architecture>x86_64</architecture>
+  |                     <rootDeviceType>ebs</rootDeviceType>
+  |                     <rootDeviceName>/dev/xvda</rootDeviceName>
+  |                     <blockDeviceMapping>
+  |                         <item>
+  |                             <deviceName>/dev/xvda</deviceName>
+  |                             <ebs>
+  |                                 <volumeId>vol-089dac64b66362a86</volumeId>
+  |                                 <status>attached</status>
+  |                                 <attachTime>2026-07-17T14:37:20.000Z</attachTime>
+  |                                 <deleteOnTermination>true</deleteOnTermination>
+  |                                 <ebsCardIndex>0</ebsCardIndex>
+  |                             </ebs>
+  |                         </item>
+  |                     </blockDeviceMapping>
+  |                     <virtualizationType>hvm</virtualizationType>
+  |                     <clientToken>terraform-0go8rVloNQcHkom5asrdNnKn1O</clientToken>
+  |                     <tagSet>
+  |                         <item>
+  |                             <key>Name</key>
+  |                             <value>mumbai-WebServer</value>
+  |                         </item>
+  |                     </tagSet>
+  |                     <hypervisor>xen</hypervisor>
+  | [truncated...]
+   http.response.header.cache_control="no-cache, no-store" http.response.header.date="Fri, 17 Jul 2026 14:57:25 GMT" http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ApplyResourceChange http.duration=85 rpc.system.name=aws-api tf_resource_type=aws_instance http.response.header.x_amzn_requestid=fc35156c-a53a-4a56-bbe9-9c2281ba93a7 http.status_code=200 rpc.method=EC2/DescribeInstances tf_mux_provider="*schema.GRPCProviderServer" timestamp="2026-07-17T20:27:25.353+0530"
+2026-07-17T20:27:28.355+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.request.header.amz_sdk_invocation_id=72f2cd65-f780-4cf5-9916-360c8b38a97f http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.content_type=application/x-www-form-urlencoded tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a tf_resource_type=aws_instance http.method=POST http.request.header.x_amz_date=20260717T145728Z tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ApplyResourceChange @module=aws aws.region=ap-south-1
+  http.request.body=
+  | Action=DescribeInstances&InstanceId.1=i-00e050943b88dbacd&Version=2016-11-15
+   http.request.header.amz_sdk_request="attempt=1; max=25" http.request_content_length=76 http.url=https://ec2.ap-south-1.amazonaws.com/ http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/C,n" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 net.peer.name=ec2.ap-south-1.amazonaws.com rpc.method=EC2/DescribeInstances rpc.system.name=aws-api timestamp="2026-07-17T20:27:28.355+0530"
+2026-07-17T20:27:28.469+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: tf_rpc=ApplyResourceChange aws.region=ap-south-1 http.duration=113
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>bdf5cfab-2c5a-49a4-aa13-947c36726890</requestId>
+  |     <reservationSet>
+  |         <item>
+  |             <reservationId>r-0af9997103d8f1072</reservationId>
+  |             <ownerId>655700896650</ownerId>
+  |             <groupSet/>
+  |             <instancesSet>
+  |                 <item>
+  |                     <instanceId>i-00e050943b88dbacd</instanceId>
+  |                     <imageId>ami-0b910d1016287a5e7</imageId>
+  |                     <instanceState>
+  |                         <code>32</code>
+  |                         <name>shutting-down</name>
+  |                     </instanceState>
+  |                     <privateDnsName>ip-172-31-37-117.ap-south-1.compute.internal</privateDnsName>
+  |                     <publicIpDnsNameOptions>
+  |                         <dnsHostnameType>public-ipv4-dns-name</dnsHostnameType>
+  |                         <publicIpv4DnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</publicIpv4DnsName>
+  |                     </publicIpDnsNameOptions>
+  |                     <dnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</dnsName>
+  |                     <reason>User initiated (2026-07-17 14:57:15 GMT)</reason>
+  |                     <keyName>awar10-lnx-kp</keyName>
+  |                     <amiLaunchIndex>0</amiLaunchIndex>
+  |                     <productCodes/>
+  |                     <operator>
+  |                         <managed>false</managed>
+  |                         <hiddenByDefault>false</hiddenByDefault>
+  |                     </operator>
+  |                     <instanceType>t3.small</instanceType>
+  |                     <launchTime>2026-07-17T14:48:13.000Z</launchTime>
+  |                     <placement>
+  |                         <availabilityZone>ap-south-1a</availabilityZone>
+  |                         <availabilityZoneId>aps1-az1</availabilityZoneId>
+  |                         <groupName/>
+  |                         <tenancy>default</tenancy>
+  |                     </placement>
+  |                     <monitoring>
+  |                         <state>disabled</state>
+  |                     </monitoring>
+  |                     <subnetId>subnet-0be4dda5a9f236a88</subnetId>
+  |                     <vpcId>vpc-00532bb704a5dbef0</vpcId>
+  |                     <privateIpAddress>172.31.37.117</privateIpAddress>
+  |                     <ipAddress>43.205.98.140</ipAddress>
+  |                     <sourceDestCheck>true</sourceDestCheck>
+  |                     <groupSet>
+  |                         <item>
+  |                             <groupId>sg-0f1b92a14f30712ee</groupId>
+  |                             <groupName>WebServer-SG</groupName>
+  |                         </item>
+  |                     </groupSet>
+  |                     <stateReason>
+  |                         <code>Client.UserInitiatedShutdown</code>
+  |                         <message>Client.UserInitiatedShutdown: User initiated shutdown</message>
+  |                     </stateReason>
+  |                     <architecture>x86_64</architecture>
+  |                     <rootDeviceType>ebs</rootDeviceType>
+  |                     <rootDeviceName>/dev/xvda</rootDeviceName>
+  |                     <blockDeviceMapping>
+  |                         <item>
+  |                             <deviceName>/dev/xvda</deviceName>
+  |                             <ebs>
+  |                                 <volumeId>vol-089dac64b66362a86</volumeId>
+  |                                 <status>attached</status>
+  |                                 <attachTime>2026-07-17T14:37:20.000Z</attachTime>
+  |                                 <deleteOnTermination>true</deleteOnTermination>
+  |                                 <ebsCardIndex>0</ebsCardIndex>
+  |                             </ebs>
+  |                         </item>
+  |                     </blockDeviceMapping>
+  |                     <virtualizationType>hvm</virtualizationType>
+  |                     <clientToken>terraform-0go8rVloNQcHkom5asrdNnKn1O</clientToken>
+  |                     <tagSet>
+  |                         <item>
+  |                             <key>Name</key>
+  |                             <value>mumbai-WebServer</value>
+  |                         </item>
+  |                     </tagSet>
+  |                     <hypervisor>xen</hypervisor>
+  | [truncated...]
+   http.response.header.server=AmazonEC2 rpc.system.name=aws-api tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a tf_resource_type=aws_instance @module=aws http.response.header.cache_control="no-cache, no-store" http.response.header.date="Fri, 17 Jul 2026 14:57:28 GMT" http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" http.response.header.x_amzn_requestid=bdf5cfab-2c5a-49a4-aa13-947c36726890 http.status_code=200 rpc.method=EC2/DescribeInstances @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.vary=accept-encoding tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-07-17T20:27:28.469+0530"
+2026-07-17T20:27:34.471+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: net.peer.name=ec2.ap-south-1.amazonaws.com rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_instance http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" rpc.method=EC2/DescribeInstances tf_rpc=ApplyResourceChange @module=aws http.method=POST
+  http.request.body=
+  | Action=DescribeInstances&InstanceId.1=i-00e050943b88dbacd&Version=2016-11-15
+   http.request_content_length=76 http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/C,n" tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" http.request.header.amz_sdk_invocation_id=ac99c76e-3275-4874-b8ca-1d50a3ac1503 http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_date=20260717T145734Z http.url=https://ec2.ap-south-1.amazonaws.com/ tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 aws.region=ap-south-1 http.request.header.amz_sdk_request="attempt=1; max=25" timestamp="2026-07-17T20:27:34.471+0530"
+2026-07-17T20:27:34.556+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: aws.region=ap-south-1 http.response.header.vary=accept-encoding http.status_code=200 rpc.system.name=aws-api tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a http.response.header.x_amzn_requestid=5421569a-ee30-40ce-8b32-f411d45134a8 tf_aws.sdk=aws-sdk-go-v2 tf_rpc=ApplyResourceChange @module=aws http.response.header.server=AmazonEC2 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" tf_aws.signing_region="" tf_resource_type=aws_instance @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.duration=84
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>5421569a-ee30-40ce-8b32-f411d45134a8</requestId>
+  |     <reservationSet>
+  |         <item>
+  |             <reservationId>r-0af9997103d8f1072</reservationId>
+  |             <ownerId>655700896650</ownerId>
+  |             <groupSet/>
+  |             <instancesSet>
+  |                 <item>
+  |                     <instanceId>i-00e050943b88dbacd</instanceId>
+  |                     <imageId>ami-0b910d1016287a5e7</imageId>
+  |                     <instanceState>
+  |                         <code>32</code>
+  |                         <name>shutting-down</name>
+  |                     </instanceState>
+  |                     <privateDnsName>ip-172-31-37-117.ap-south-1.compute.internal</privateDnsName>
+  |                     <publicIpDnsNameOptions>
+  |                         <dnsHostnameType>public-ipv4-dns-name</dnsHostnameType>
+  |                         <publicIpv4DnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</publicIpv4DnsName>
+  |                     </publicIpDnsNameOptions>
+  |                     <dnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</dnsName>
+  |                     <reason>User initiated (2026-07-17 14:57:15 GMT)</reason>
+  |                     <keyName>awar10-lnx-kp</keyName>
+  |                     <amiLaunchIndex>0</amiLaunchIndex>
+  |                     <productCodes/>
+  |                     <operator>
+  |                         <managed>false</managed>
+  |                         <hiddenByDefault>false</hiddenByDefault>
+  |                     </operator>
+  |                     <instanceType>t3.small</instanceType>
+  |                     <launchTime>2026-07-17T14:48:13.000Z</launchTime>
+  |                     <placement>
+  |                         <availabilityZone>ap-south-1a</availabilityZone>
+  |                         <availabilityZoneId>aps1-az1</availabilityZoneId>
+  |                         <groupName/>
+  |                         <tenancy>default</tenancy>
+  |                     </placement>
+  |                     <monitoring>
+  |                         <state>disabled</state>
+  |                     </monitoring>
+  |                     <subnetId>subnet-0be4dda5a9f236a88</subnetId>
+  |                     <vpcId>vpc-00532bb704a5dbef0</vpcId>
+  |                     <privateIpAddress>172.31.37.117</privateIpAddress>
+  |                     <ipAddress>43.205.98.140</ipAddress>
+  |                     <sourceDestCheck>true</sourceDestCheck>
+  |                     <groupSet>
+  |                         <item>
+  |                             <groupId>sg-0f1b92a14f30712ee</groupId>
+  |                             <groupName>WebServer-SG</groupName>
+  |                         </item>
+  |                     </groupSet>
+  |                     <stateReason>
+  |                         <code>Client.UserInitiatedShutdown</code>
+  |                         <message>Client.UserInitiatedShutdown: User initiated shutdown</message>
+  |                     </stateReason>
+  |                     <architecture>x86_64</architecture>
+  |                     <rootDeviceType>ebs</rootDeviceType>
+  |                     <rootDeviceName>/dev/xvda</rootDeviceName>
+  |                     <blockDeviceMapping>
+  |                         <item>
+  |                             <deviceName>/dev/xvda</deviceName>
+  |                             <ebs>
+  |                                 <volumeId>vol-089dac64b66362a86</volumeId>
+  |                                 <status>attached</status>
+  |                                 <attachTime>2026-07-17T14:37:20.000Z</attachTime>
+  |                                 <deleteOnTermination>true</deleteOnTermination>
+  |                                 <ebsCardIndex>0</ebsCardIndex>
+  |                             </ebs>
+  |                         </item>
+  |                     </blockDeviceMapping>
+  |                     <virtualizationType>hvm</virtualizationType>
+  |                     <clientToken>terraform-0go8rVloNQcHkom5asrdNnKn1O</clientToken>
+  |                     <tagSet>
+  |                         <item>
+  |                             <key>Name</key>
+  |                             <value>mumbai-WebServer</value>
+  |                         </item>
+  |                     </tagSet>
+  |                     <hypervisor>xen</hypervisor>
+  | [truncated...]
+   http.response.header.cache_control="no-cache, no-store" http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.date="Fri, 17 Jul 2026 14:57:34 GMT" rpc.method=EC2/DescribeInstances timestamp="2026-07-17T20:27:34.556+0530"
+2026-07-17T20:27:44.557+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/C,n" http.request.header.amz_sdk_request="attempt=1; max=25" tf_aws.sdk=aws-sdk-go-v2 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.request.header.amz_sdk_invocation_id=6bde9d6f-62b4-489e-8c29-824b70edea8b http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_date=20260717T145744Z net.peer.name=ec2.ap-south-1.amazonaws.com rpc.method=EC2/DescribeInstances rpc.system.name=aws-api tf_aws.signing_region="" @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a tf_resource_type=aws_instance tf_rpc=ApplyResourceChange aws.region=ap-south-1 http.method=POST
+  http.request.body=
+  | Action=DescribeInstances&InstanceId.1=i-00e050943b88dbacd&Version=2016-11-15
+   http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request_content_length=76 http.url=https://ec2.ap-south-1.amazonaws.com/ timestamp="2026-07-17T20:27:44.557+0530"
+2026-07-17T20:27:44.633+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: tf_rpc=ApplyResourceChange
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>8e87e178-70f8-4a19-a62d-156416e70a53</requestId>
+  |     <reservationSet>
+  |         <item>
+  |             <reservationId>r-0af9997103d8f1072</reservationId>
+  |             <ownerId>655700896650</ownerId>
+  |             <groupSet/>
+  |             <instancesSet>
+  |                 <item>
+  |                     <instanceId>i-00e050943b88dbacd</instanceId>
+  |                     <imageId>ami-0b910d1016287a5e7</imageId>
+  |                     <instanceState>
+  |                         <code>32</code>
+  |                         <name>shutting-down</name>
+  |                     </instanceState>
+  |                     <privateDnsName>ip-172-31-37-117.ap-south-1.compute.internal</privateDnsName>
+  |                     <publicIpDnsNameOptions>
+  |                         <dnsHostnameType>public-ipv4-dns-name</dnsHostnameType>
+  |                         <publicIpv4DnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</publicIpv4DnsName>
+  |                     </publicIpDnsNameOptions>
+  |                     <dnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</dnsName>
+  |                     <reason>User initiated (2026-07-17 14:57:15 GMT)</reason>
+  |                     <keyName>awar10-lnx-kp</keyName>
+  |                     <amiLaunchIndex>0</amiLaunchIndex>
+  |                     <productCodes/>
+  |                     <operator>
+  |                         <managed>false</managed>
+  |                         <hiddenByDefault>false</hiddenByDefault>
+  |                     </operator>
+  |                     <instanceType>t3.small</instanceType>
+  |                     <launchTime>2026-07-17T14:48:13.000Z</launchTime>
+  |                     <placement>
+  |                         <availabilityZone>ap-south-1a</availabilityZone>
+  |                         <availabilityZoneId>aps1-az1</availabilityZoneId>
+  |                         <groupName/>
+  |                         <tenancy>default</tenancy>
+  |                     </placement>
+  |                     <monitoring>
+  |                         <state>disabled</state>
+  |                     </monitoring>
+  |                     <subnetId>subnet-0be4dda5a9f236a88</subnetId>
+  |                     <vpcId>vpc-00532bb704a5dbef0</vpcId>
+  |                     <privateIpAddress>172.31.37.117</privateIpAddress>
+  |                     <ipAddress>43.205.98.140</ipAddress>
+  |                     <sourceDestCheck>true</sourceDestCheck>
+  |                     <groupSet>
+  |                         <item>
+  |                             <groupId>sg-0f1b92a14f30712ee</groupId>
+  |                             <groupName>WebServer-SG</groupName>
+  |                         </item>
+  |                     </groupSet>
+  |                     <stateReason>
+  |                         <code>Client.UserInitiatedShutdown</code>
+  |                         <message>Client.UserInitiatedShutdown: User initiated shutdown</message>
+  |                     </stateReason>
+  |                     <architecture>x86_64</architecture>
+  |                     <rootDeviceType>ebs</rootDeviceType>
+  |                     <rootDeviceName>/dev/xvda</rootDeviceName>
+  |                     <blockDeviceMapping>
+  |                         <item>
+  |                             <deviceName>/dev/xvda</deviceName>
+  |                             <ebs>
+  |                                 <volumeId>vol-089dac64b66362a86</volumeId>
+  |                                 <status>attached</status>
+  |                                 <attachTime>2026-07-17T14:37:20.000Z</attachTime>
+  |                                 <deleteOnTermination>true</deleteOnTermination>
+  |                                 <ebsCardIndex>0</ebsCardIndex>
+  |                             </ebs>
+  |                         </item>
+  |                     </blockDeviceMapping>
+  |                     <virtualizationType>hvm</virtualizationType>
+  |                     <clientToken>terraform-0go8rVloNQcHkom5asrdNnKn1O</clientToken>
+  |                     <tagSet>
+  |                         <item>
+  |                             <key>Name</key>
+  |                             <value>mumbai-WebServer</value>
+  |                         </item>
+  |                     </tagSet>
+  |                     <hypervisor>xen</hypervisor>
+  | [truncated...]
+   http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.x_amzn_requestid=8e87e178-70f8-4a19-a62d-156416e70a53 http.status_code=200 rpc.method=EC2/DescribeInstances rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.response.header.vary=accept-encoding @module=aws aws.region=ap-south-1 http.response.header.cache_control="no-cache, no-store" http.response.header.date="Fri, 17 Jul 2026 14:57:44 GMT" tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a tf_resource_type=aws_instance @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.duration=75 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" http.response.header.server=AmazonEC2 tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2026-07-17T20:27:44.633+0530"
+2026-07-17T20:27:54.635+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent:
+  http.request.body=
+  | Action=DescribeInstances&InstanceId.1=i-00e050943b88dbacd&Version=2016-11-15
+   http.request.header.amz_sdk_invocation_id=e88477e3-45e9-4416-9472-50b9dc8a5bf5 http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a tf_resource_type=aws_instance aws.region=ap-south-1 http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_date=20260717T145754Z http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/C,n" net.peer.name=ec2.ap-south-1.amazonaws.com rpc.method=EC2/DescribeInstances tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.request_content_length=76 http.url=https://ec2.ap-south-1.amazonaws.com/ rpc.system.name=aws-api tf_aws.sdk=aws-sdk-go-v2 tf_rpc=ApplyResourceChange @module=aws http.method=POST tf_aws.signing_region="" timestamp="2026-07-17T20:27:54.635+0530"
+2026-07-17T20:27:54.718+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: aws.region=ap-south-1 http.duration=82 http.response.header.cache_control="no-cache, no-store" http.response.header.server=AmazonEC2 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" rpc.system.name=aws-api tf_aws.signing_region="" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>0e77007c-4d22-474e-baef-1d5774b4e0d2</requestId>
+  |     <reservationSet>
+  |         <item>
+  |             <reservationId>r-0af9997103d8f1072</reservationId>
+  |             <ownerId>655700896650</ownerId>
+  |             <groupSet/>
+  |             <instancesSet>
+  |                 <item>
+  |                     <instanceId>i-00e050943b88dbacd</instanceId>
+  |                     <imageId>ami-0b910d1016287a5e7</imageId>
+  |                     <instanceState>
+  |                         <code>32</code>
+  |                         <name>shutting-down</name>
+  |                     </instanceState>
+  |                     <privateDnsName>ip-172-31-37-117.ap-south-1.compute.internal</privateDnsName>
+  |                     <publicIpDnsNameOptions>
+  |                         <dnsHostnameType>public-ipv4-dns-name</dnsHostnameType>
+  |                         <publicIpv4DnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</publicIpv4DnsName>
+  |                     </publicIpDnsNameOptions>
+  |                     <dnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</dnsName>
+  |                     <reason>User initiated (2026-07-17 14:57:15 GMT)</reason>
+  |                     <keyName>awar10-lnx-kp</keyName>
+  |                     <amiLaunchIndex>0</amiLaunchIndex>
+  |                     <productCodes/>
+  |                     <operator>
+  |                         <managed>false</managed>
+  |                         <hiddenByDefault>false</hiddenByDefault>
+  |                     </operator>
+  |                     <instanceType>t3.small</instanceType>
+  |                     <launchTime>2026-07-17T14:48:13.000Z</launchTime>
+  |                     <placement>
+  |                         <availabilityZone>ap-south-1a</availabilityZone>
+  |                         <availabilityZoneId>aps1-az1</availabilityZoneId>
+  |                         <groupName/>
+  |                         <tenancy>default</tenancy>
+  |                     </placement>
+  |                     <monitoring>
+  |                         <state>disabled</state>
+  |                     </monitoring>
+  |                     <subnetId>subnet-0be4dda5a9f236a88</subnetId>
+  |                     <vpcId>vpc-00532bb704a5dbef0</vpcId>
+  |                     <privateIpAddress>172.31.37.117</privateIpAddress>
+  |                     <ipAddress>43.205.98.140</ipAddress>
+  |                     <sourceDestCheck>true</sourceDestCheck>
+  |                     <groupSet>
+  |                         <item>
+  |                             <groupId>sg-0f1b92a14f30712ee</groupId>
+  |                             <groupName>WebServer-SG</groupName>
+  |                         </item>
+  |                     </groupSet>
+  |                     <stateReason>
+  |                         <code>Client.UserInitiatedShutdown</code>
+  |                         <message>Client.UserInitiatedShutdown: User initiated shutdown</message>
+  |                     </stateReason>
+  |                     <architecture>x86_64</architecture>
+  |                     <rootDeviceType>ebs</rootDeviceType>
+  |                     <rootDeviceName>/dev/xvda</rootDeviceName>
+  |                     <blockDeviceMapping>
+  |                         <item>
+  |                             <deviceName>/dev/xvda</deviceName>
+  |                             <ebs>
+  |                                 <volumeId>vol-089dac64b66362a86</volumeId>
+  |                                 <status>attached</status>
+  |                                 <attachTime>2026-07-17T14:37:20.000Z</attachTime>
+  |                                 <deleteOnTermination>true</deleteOnTermination>
+  |                                 <ebsCardIndex>0</ebsCardIndex>
+  |                             </ebs>
+  |                         </item>
+  |                     </blockDeviceMapping>
+  |                     <virtualizationType>hvm</virtualizationType>
+  |                     <clientToken>terraform-0go8rVloNQcHkom5asrdNnKn1O</clientToken>
+  |                     <tagSet>
+  |                         <item>
+  |                             <key>Name</key>
+  |                             <value>mumbai-WebServer</value>
+  |                         </item>
+  |                     </tagSet>
+  |                     <hypervisor>xen</hypervisor>
+  | [truncated...]
+   http.response.header.date="Fri, 17 Jul 2026 14:57:54 GMT" http.status_code=200 rpc.method=EC2/DescribeInstances tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws http.response.header.vary=accept-encoding tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a tf_rpc=ApplyResourceChange http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.x_amzn_requestid=0e77007c-4d22-474e-baef-1d5774b4e0d2 tf_aws.sdk=aws-sdk-go-v2 tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_instance timestamp="2026-07-17T20:27:54.718+0530"
+2026-07-17T20:28:04.719+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 @module=aws http.request.header.amz_sdk_request="attempt=1; max=25" http.request.header.content_type=application/x-www-form-urlencoded aws.region=ap-south-1 http.method=POST
+  http.request.body=
+  | Action=DescribeInstances&InstanceId.1=i-00e050943b88dbacd&Version=2016-11-15
+   http.request.header.amz_sdk_invocation_id=b595c422-ecb3-4095-972e-82696901e395 http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.x_amz_date=20260717T145804Z http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/C,n" rpc.system.name=aws-api http.url=https://ec2.ap-south-1.amazonaws.com/ tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a tf_resource_type=aws_instance tf_rpc=ApplyResourceChange http.request_content_length=76 net.peer.name=ec2.ap-south-1.amazonaws.com rpc.method=EC2/DescribeInstances timestamp="2026-07-17T20:28:04.719+0530"
+2026-07-17T20:28:04.800+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: http.response.header.cache_control="no-cache, no-store" http.response.header.date="Fri, 17 Jul 2026 14:58:04 GMT" http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" http.status_code=200 tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ApplyResourceChange @module=aws aws.region=ap-south-1
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>6926d00b-2a8e-4145-a89b-5c07ae3474af</requestId>
+  |     <reservationSet>
+  |         <item>
+  |             <reservationId>r-0af9997103d8f1072</reservationId>
+  |             <ownerId>655700896650</ownerId>
+  |             <groupSet/>
+  |             <instancesSet>
+  |                 <item>
+  |                     <instanceId>i-00e050943b88dbacd</instanceId>
+  |                     <imageId>ami-0b910d1016287a5e7</imageId>
+  |                     <instanceState>
+  |                         <code>32</code>
+  |                         <name>shutting-down</name>
+  |                     </instanceState>
+  |                     <privateDnsName>ip-172-31-37-117.ap-south-1.compute.internal</privateDnsName>
+  |                     <publicIpDnsNameOptions>
+  |                         <dnsHostnameType>public-ipv4-dns-name</dnsHostnameType>
+  |                         <publicIpv4DnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</publicIpv4DnsName>
+  |                     </publicIpDnsNameOptions>
+  |                     <dnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</dnsName>
+  |                     <reason>User initiated (2026-07-17 14:57:15 GMT)</reason>
+  |                     <keyName>awar10-lnx-kp</keyName>
+  |                     <amiLaunchIndex>0</amiLaunchIndex>
+  |                     <productCodes/>
+  |                     <operator>
+  |                         <managed>false</managed>
+  |                         <hiddenByDefault>false</hiddenByDefault>
+  |                     </operator>
+  |                     <instanceType>t3.small</instanceType>
+  |                     <launchTime>2026-07-17T14:48:13.000Z</launchTime>
+  |                     <placement>
+  |                         <availabilityZone>ap-south-1a</availabilityZone>
+  |                         <availabilityZoneId>aps1-az1</availabilityZoneId>
+  |                         <groupName/>
+  |                         <tenancy>default</tenancy>
+  |                     </placement>
+  |                     <monitoring>
+  |                         <state>disabled</state>
+  |                     </monitoring>
+  |                     <subnetId>subnet-0be4dda5a9f236a88</subnetId>
+  |                     <vpcId>vpc-00532bb704a5dbef0</vpcId>
+  |                     <privateIpAddress>172.31.37.117</privateIpAddress>
+  |                     <ipAddress>43.205.98.140</ipAddress>
+  |                     <sourceDestCheck>true</sourceDestCheck>
+  |                     <groupSet>
+  |                         <item>
+  |                             <groupId>sg-0f1b92a14f30712ee</groupId>
+  |                             <groupName>WebServer-SG</groupName>
+  |                         </item>
+  |                     </groupSet>
+  |                     <stateReason>
+  |                         <code>Client.UserInitiatedShutdown</code>
+  |                         <message>Client.UserInitiatedShutdown: User initiated shutdown</message>
+  |                     </stateReason>
+  |                     <architecture>x86_64</architecture>
+  |                     <rootDeviceType>ebs</rootDeviceType>
+  |                     <rootDeviceName>/dev/xvda</rootDeviceName>
+  |                     <blockDeviceMapping>
+  |                         <item>
+  |                             <deviceName>/dev/xvda</deviceName>
+  |                             <ebs>
+  |                                 <volumeId>vol-089dac64b66362a86</volumeId>
+  |                                 <status>attached</status>
+  |                                 <attachTime>2026-07-17T14:37:20.000Z</attachTime>
+  |                                 <deleteOnTermination>true</deleteOnTermination>
+  |                                 <ebsCardIndex>0</ebsCardIndex>
+  |                             </ebs>
+  |                         </item>
+  |                     </blockDeviceMapping>
+  |                     <virtualizationType>hvm</virtualizationType>
+  |                     <clientToken>terraform-0go8rVloNQcHkom5asrdNnKn1O</clientToken>
+  |                     <tagSet>
+  |                         <item>
+  |                             <key>Name</key>
+  |                             <value>mumbai-WebServer</value>
+  |                         </item>
+  |                     </tagSet>
+  |                     <hypervisor>xen</hypervisor>
+  | [truncated...]
+   http.response.header.server=AmazonEC2 http.response.header.vary=accept-encoding tf_aws.signing_region="" http.duration=80 http.response.header.content_type=text/xml;charset=UTF-8 rpc.system.name=aws-api tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.response.header.x_amzn_requestid=6926d00b-2a8e-4145-a89b-5c07ae3474af rpc.method=EC2/DescribeInstances tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_instance timestamp="2026-07-17T20:28:04.800+0530"
+2026-07-17T20:28:14.803+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: http.request.header.amz_sdk_request="attempt=1; max=25" tf_aws.signing_region="" net.peer.name=ec2.ap-south-1.amazonaws.com rpc.system.name=aws-api tf_resource_type=aws_instance tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.method=POST http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_date=20260717T145814Z tf_aws.sdk=aws-sdk-go-v2 tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a @module=aws http.request.header.amz_sdk_invocation_id=91c6e5ee-8e22-485a-b27e-7f71b32a858c http.request_content_length=76 http.url=https://ec2.ap-south-1.amazonaws.com/ http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/C,n" rpc.method=EC2/DescribeInstances tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws aws.region=ap-south-1
+  http.request.body=
+  | Action=DescribeInstances&InstanceId.1=i-00e050943b88dbacd&Version=2016-11-15
+   timestamp="2026-07-17T20:28:14.802+0530"
+2026-07-17T20:28:14.953+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: aws.region=ap-south-1 http.duration=150 http.response.header.cache_control="no-cache, no-store" http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.date="Fri, 17 Jul 2026 14:58:14 GMT" rpc.method=EC2/DescribeInstances tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 @module=aws http.status_code=200 rpc.system.name=aws-api tf_resource_type=aws_instance tf_rpc=ApplyResourceChange
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>810b8576-ede5-49be-9c66-f4dd6cda5e7b</requestId>
+  |     <reservationSet>
+  |         <item>
+  |             <reservationId>r-0af9997103d8f1072</reservationId>
+  |             <ownerId>655700896650</ownerId>
+  |             <groupSet/>
+  |             <instancesSet>
+  |                 <item>
+  |                     <instanceId>i-00e050943b88dbacd</instanceId>
+  |                     <imageId>ami-0b910d1016287a5e7</imageId>
+  |                     <instanceState>
+  |                         <code>32</code>
+  |                         <name>shutting-down</name>
+  |                     </instanceState>
+  |                     <privateDnsName>ip-172-31-37-117.ap-south-1.compute.internal</privateDnsName>
+  |                     <publicIpDnsNameOptions>
+  |                         <dnsHostnameType>public-ipv4-dns-name</dnsHostnameType>
+  |                         <publicIpv4DnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</publicIpv4DnsName>
+  |                     </publicIpDnsNameOptions>
+  |                     <dnsName>ec2-43-205-98-140.ap-south-1.compute.amazonaws.com</dnsName>
+  |                     <reason>User initiated (2026-07-17 14:57:15 GMT)</reason>
+  |                     <keyName>awar10-lnx-kp</keyName>
+  |                     <amiLaunchIndex>0</amiLaunchIndex>
+  |                     <productCodes/>
+  |                     <operator>
+  |                         <managed>false</managed>
+  |                         <hiddenByDefault>false</hiddenByDefault>
+  |                     </operator>
+  |                     <instanceType>t3.small</instanceType>
+  |                     <launchTime>2026-07-17T14:48:13.000Z</launchTime>
+  |                     <placement>
+  |                         <availabilityZone>ap-south-1a</availabilityZone>
+  |                         <availabilityZoneId>aps1-az1</availabilityZoneId>
+  |                         <groupName/>
+  |                         <tenancy>default</tenancy>
+  |                     </placement>
+  |                     <monitoring>
+  |                         <state>disabled</state>
+  |                     </monitoring>
+  |                     <subnetId>subnet-0be4dda5a9f236a88</subnetId>
+  |                     <vpcId>vpc-00532bb704a5dbef0</vpcId>
+  |                     <privateIpAddress>172.31.37.117</privateIpAddress>
+  |                     <ipAddress>43.205.98.140</ipAddress>
+  |                     <sourceDestCheck>true</sourceDestCheck>
+  |                     <groupSet>
+  |                         <item>
+  |                             <groupId>sg-0f1b92a14f30712ee</groupId>
+  |                             <groupName>WebServer-SG</groupName>
+  |                         </item>
+  |                     </groupSet>
+  |                     <stateReason>
+  |                         <code>Client.UserInitiatedShutdown</code>
+  |                         <message>Client.UserInitiatedShutdown: User initiated shutdown</message>
+  |                     </stateReason>
+  |                     <architecture>x86_64</architecture>
+  |                     <rootDeviceType>ebs</rootDeviceType>
+  |                     <rootDeviceName>/dev/xvda</rootDeviceName>
+  |                     <blockDeviceMapping>
+  |                         <item>
+  |                             <deviceName>/dev/xvda</deviceName>
+  |                             <ebs>
+  |                                 <volumeId>vol-089dac64b66362a86</volumeId>
+  |                                 <status>attached</status>
+  |                                 <attachTime>2026-07-17T14:37:20.000Z</attachTime>
+  |                                 <deleteOnTermination>true</deleteOnTermination>
+  |                                 <ebsCardIndex>0</ebsCardIndex>
+  |                             </ebs>
+  |                         </item>
+  |                     </blockDeviceMapping>
+  |                     <virtualizationType>hvm</virtualizationType>
+  |                     <clientToken>terraform-0go8rVloNQcHkom5asrdNnKn1O</clientToken>
+  |                     <tagSet>
+  |                         <item>
+  |                             <key>Name</key>
+  |                             <value>mumbai-WebServer</value>
+  |                         </item>
+  |                     </tagSet>
+  |                     <hypervisor>xen</hypervisor>
+  | [truncated...]
+   http.response.header.vary=accept-encoding http.response.header.x_amzn_requestid=810b8576-ede5-49be-9c66-f4dd6cda5e7b tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws http.response.header.server=AmazonEC2 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" tf_aws.signing_region="" timestamp="2026-07-17T20:28:14.953+0530"
+2026-07-17T20:28:24.955+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Request Sent: http.method=POST rpc.method=EC2/DescribeInstances tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_instance @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 @module=aws aws.region=ap-south-1 http.request.header.amz_sdk_invocation_id=5be9d8be-f0a8-4316-bfcd-9b47d3ef9bce http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_date=20260717T145824Z http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.15.8 (+https://www.terraform.io) terraform-provider-aws/6.54.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.42.1 ua/2.1 os/macos lang/go#1.26.4 md/GOOS#darwin md/GOARCH#arm64 api/ec2#1.312.0 m/C,n" net.peer.name=ec2.ap-south-1.amazonaws.com
+  http.request.body=
+  | Action=DescribeInstances&InstanceId.1=i-00e050943b88dbacd&Version=2016-11-15
+   http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************SD7C/20260717/ap-south-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request_content_length=76 http.url=https://ec2.ap-south-1.amazonaws.com/ rpc.system.name=aws-api tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ApplyResourceChange http.request.header.amz_sdk_request="attempt=1; max=25" tf_aws.sdk=aws-sdk-go-v2 tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a timestamp="2026-07-17T20:28:24.955+0530"
+2026-07-17T20:28:25.052+0530 [DEBUG] provider.terraform-provider-aws_v6.54.0_x5: HTTP Response Received: http.response.header.x_amzn_requestid=e9a021f7-8a91-4c20-9833-cec132abed67 tf_mux_provider="*schema.GRPCProviderServer" http.response.header.server=AmazonEC2 http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" rpc.system.name=aws-api tf_req_id=3996f696-f158-3fb8-76ae-deebb903754a tf_rpc=ApplyResourceChange http.response.header.vary=accept-encoding aws.region=ap-south-1
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>e9a021f7-8a91-4c20-9833-cec132abed67</requestId>
+  |     <reservationSet>
+  |         <item>
+  |             <reservationId>r-0af9997103d8f1072</reservationId>
+  |             <ownerId>655700896650</ownerId>
+  |             <groupSet/>
+  |             <instancesSet>
+  |                 <item>
+  |                     <instanceId>i-00e050943b88dbacd</instanceId>
+  |                     <imageId>ami-0b910d1016287a5e7</imageId>
+  |                     <instanceState>
+  |                         <code>48</code>
+  |                         <name>terminated</name>
+  |                     </instanceState>
+  |                     <privateDnsName/>
+  |                     <dnsName/>
+  |                     <reason>User initiated (2026-07-17 14:57:15 GMT)</reason>
+  |                     <keyName>awar10-lnx-kp</keyName>
+  |                     <amiLaunchIndex>0</amiLaunchIndex>
+  |                     <productCodes/>
+  |                     <operator>
+  |                         <managed>false</managed>
+  |                         <hiddenByDefault>false</hiddenByDefault>
+  |                     </operator>
+  |                     <instanceType>t3.small</instanceType>
+  |                     <launchTime>2026-07-17T14:48:13.000Z</launchTime>
+  |                     <placement>
+  |                         <availabilityZone>ap-south-1a</availabilityZone>
+  |                         <availabilityZoneId>aps1-az1</availabilityZoneId>
+  |                         <groupName/>
+  |                         <tenancy>default</tenancy>
+  |                     </placement>
+  |                     <monitoring>
+  |                         <state>disabled</state>
+  |                     </monitoring>
+  |                     <groupSet/>
+  |                     <stateReason>
+  |                         <code>Client.UserInitiatedShutdown</code>
+  |                         <message>Client.UserInitiatedShutdown: User initiated shutdown</message>
+  |                     </stateReason>
+  |                     <architecture>x86_64</architecture>
+  |                     <rootDeviceType>ebs</rootDeviceType>
+  |                     <rootDeviceName>/dev/xvda</rootDeviceName>
+  |                     <blockDeviceMapping/>
+  |                     <virtualizationType>hvm</virtualizationType>
+  |                     <clientToken>terraform-0go8rVloNQcHkom5asrdNnKn1O</clientToken>
+  |                     <tagSet>
+  |                         <item>
+  |                             <key>Name</key>
+  |                             <value>mumbai-WebServer</value>
+  |                         </item>
+  |                     </tagSet>
+  |                     <hypervisor>xen</hypervisor>
+  |                     <networkInterfaceSet/>
+  |                     <secondaryInterfaceSet/>
+  |                     <ebsOptimized>true</ebsOptimized>
+  |                     <enaSupport>true</enaSupport>
+  |                     <cpuOptions>
+  |                         <coreCount>1</coreCount>
+  |                         <threadsPerCore>2</threadsPerCore>
+  |                     </cpuOptions>
+  |                     <capacityReservationSpecification>
+  |                         <capacityReservationPreference>open</capacityReservationPreference>
+  |                     </capacityReservationSpecification>
+  |                     <hibernationOptions>
+  |                         <configured>false</configured>
+  |                     </hibernationOptions>
+  |                     <enclaveOptions>
+  |                         <enabled>false</enabled>
+  |                     </enclaveOptions>
+  |                     <metadataOptions>
+  |                         <state>pending</state>
+  |                         <httpTokens>required</httpTokens>
+  |                         <httpPutResponseHopLimit>2</httpPutResponseHopLimit>
+  |                         <httpEndpoint>enabled</httpEndpoint>
+  |                         <httpProtocolIpv4>enabled</httpProtocolIpv4>
+  |                         <httpProtocolIpv6>disabled</httpProtocolIpv6>
+  |                         <instanceMetadataTags>enabled</instanceMetadataTags>
+  |                     </metadataOptions>
+  |                     <maintenanceOptions>
+  |                         <autoRecovery>default</autoRecovery>
+  |                         <rebootMigration>default</rebootMigration>
+  | [truncated...]
+   http.status_code=200 tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.date="Fri, 17 Jul 2026 14:58:25 GMT" rpc.method=EC2/DescribeInstances tf_provider_addr=registry.terraform.io/hashicorp/aws tf_resource_type=aws_instance http.response.header.cache_control="no-cache, no-store" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 @module=aws http.duration=96 timestamp="2026-07-17T20:28:25.052+0530"
+2026-07-17T20:28:25.057+0530 [DEBUG] State storage *statemgr.Filesystem declined to persist a state snapshot
+2026-07-17T20:28:25.057+0530 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-07-17T20:28:25.061+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.54.0/darwin_arm64/terraform-provider-aws_v6.54.0_x5 id=37248
+2026-07-17T20:28:25.061+0530 [DEBUG] provider: plugin exited
