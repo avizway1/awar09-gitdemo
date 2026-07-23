@@ -3,6 +3,16 @@ provider "aws" {
   region = var.region
   profile = "default"
 }
+
+terraform {
+  cloud {
+    organization = "aviz7"
+    workspaces {
+      name = "awar09-gitdemo"
+  }
+}
+}
+
 resource "aws_instance" "mumbai-webserver" {
   count         = var.instance_count
   ami           = var.ami_id

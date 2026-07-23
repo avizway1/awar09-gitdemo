@@ -26,5 +26,5 @@ variable "key_name" {
 
 variable "environment" {
   type = string
-  default = "locktest-dev"
+  default = "price-test-dev"
 }
